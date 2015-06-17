@@ -13,10 +13,11 @@
 	  </h1>
 		<p ng-repeat="stanza in content" style="display:table-row">
 				<span style="display:table-cell;padding-left:10px;text-align:justify" ng-repeat="bayith in stanza">
-				<span style="font-weight:bold;font-size:30px;">
-					{{letters(bayith)}}
-				</span><span>
-					{{letters(bayith, true)}}.
+				<span style="font-weight:bold;font-size:30px" ng-show="bayith.acrostic">
+					{{letters(bayith)}}<!-- Prevent unwanted spaces
+				--></span><!-- Prevent unwanted spaces
+				--><span><!-- Prevent unwanted spaces
+					-->{{letters(bayith, true)}}.
 				</span> 
 			</span>
 		  </p>
