@@ -10,7 +10,7 @@ var app = angular.module('myApp', []);
   
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
-  $scope.content = function() {
+  $scope.content = (function() {
     var twoDarray =
 	[
       ['אֶת-חֻקֶּֽיךָ אֶשְׁמֹר',  'מָתַי אָבוֹא וְאֶרְאֶה',  'יַצֵּב גְּבוּל הַר-מוֹר',  'יִסַּח כָּל-בֵּית גֵּאֶה'],
@@ -48,7 +48,7 @@ app.controller('myCtrl', function($scope) {
       result.push(newStanza);
     });
 	return result;
-  };
+  })();
   
   $scope.charRegex = /^([^\u05d0-\u05ea]*[\u05d0-\u05ea][^\u05d0-\u05ea]*)(.*)$/;
   
