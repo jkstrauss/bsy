@@ -11,9 +11,9 @@
 		<p>תוספת ליום שני של סוכות למוצאי שנת השמטה</p>
 		<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימושׂ בר ישראל הלוי</p>
 	  </h1>
-		<p ng-repeat="stanza in content" style="display:table-row">
-				<span style="display:table-cell;padding-left:10px;text-align:justify" ng-repeat="bayith in stanza">
-				<span style="font-weight:bold;font-size:30px" ng-show="bayith.acrostic">
+		<p ng-repeat="stanza in content" class="stanza">
+				<span class="bayith" ng-repeat="bayith in stanza">
+				<span class="acrostic" ng-show="bayith.acrostic">
 					{{letters(bayith)}}<!-- Prevent unwanted spaces
 				--></span><!-- Prevent unwanted spaces
 				--><span><!-- Prevent unwanted spaces
@@ -21,7 +21,9 @@
 				</span> 
 			</span>
 		  </p>
-	  בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
+		<p>
+			בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
+		</p>
   </body>
   
 </html>

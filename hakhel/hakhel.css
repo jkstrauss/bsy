@@ -1,9 +1,24 @@
 
 
-p {
+p  {
   font-size: 24px;
 }
 
 body {
 	font-family:'Ezra SIL SR', 'Taamey Frank CLM', 'Taamey David CLM', 'Keter YG', 'Keter Aram Sova', 'Ezra SIL', 'Cardo', serif;
+}
+
+.bayith {
+	display:table-cell;
+	padding-left:10px;
+	text-align:justify
+}
+
+.stanza {
+	display:table-row;
+}
+
+.acrostic {
+	font-weight:bold;
+	font-size:30px
 }
