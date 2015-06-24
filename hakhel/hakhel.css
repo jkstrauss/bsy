@@ -1,17 +1,19 @@
 
 
 p  {
-  font-size: 24px;
+  font-size: 17px;
 }
 
 body {
 	font-family:'Ezra SIL SR', 'Taamey Frank CLM', 'Taamey David CLM', 'Keter YG', 'Keter Aram Sova', 'Ezra SIL', 'Cardo', serif;
+	width:7.5in;
+	height:10in;
 }
 
 .bayith {
-	display:table-cell;
-	padding-left:10px;
-	text-align:justify
+	padding-left:1.25ex;
+	display:inline-block;
+	width:1.75in;
 }
 
 .stanza {
@@ -20,5 +22,16 @@ body {
 
 .acrostic {
 	font-weight:bold;
-	font-size:30px
+	font-size:1.2em
+}
+
+.justify {
+  text-align: justify;
+  word-spacing: -10px;
+}
+ 
+.justify:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
 }
