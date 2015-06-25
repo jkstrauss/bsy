@@ -8,23 +8,30 @@
 	</head>
 	<body dir="rtl" ng-app="myApp" ng-controller="myCtrl">
 	<div class="main">
-		<h1>
-			<p>תוספת ליום שני של סוכות למוצאי שנת השמטה</p>
-			<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימושׂ בר ישראל הלוי</p>
-		</h1>
-		<p ng-repeat="stanza in content" class="stanza">
-				<span class="bayith justify" ng-repeat="bayith in stanza">
-				<span class="acrostic" ng-show="bayith.acrostic">
-					{{letters(bayith)}}<!-- Prevent unwanted spaces
-				--></span><!-- Prevent unwanted spaces
-				--><span><!-- Prevent unwanted spaces
-					-->{{letters(bayith, true)}}.
-				</span> 
-			</span>
-		  </p>
-		<p>
-			בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
-		</p>
+		<div class="actual">
+			<h1>
+				<p>תוספת לליל שני של סוכות למוצאי שנת השמטה</p>
+				<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימושׂ בר ישראל הלוי</p>
+			</h1>
+			<div style="tableContainer">
+				<div class="table">
+					<p ng-repeat="stanza in content" class="stanza">
+							<span class="bayith justify" ng-repeat="bayith in stanza">
+							<span class="acrostic" ng-show="bayith.acrostic">
+								{{letters(bayith)}}<!-- Prevent unwanted spaces
+							--></span><!-- Prevent unwanted spaces
+							--><span><!-- Prevent unwanted spaces
+								-->{{letters(bayith, true)}}.
+							</span> 
+						</span>
+					  </p>
+					<p>
+				</div>
+			</div>
+			<p>
+				בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
+			</p>
+		</div>
 	</div>
   </body>
   

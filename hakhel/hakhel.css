@@ -1,20 +1,41 @@
-
-
-p  {
-  font-size: 17px;
-}
-
-div.main {
-	font-family:'Ezra SIL SR', 'Taamey Frank CLM', 'Taamey David CLM', 'Keter YG', 'Keter Aram Sova', 'Ezra SIL', 'Cardo', serif;
-	width:7.5in;
-	height:10in;
+body {
 	background:#ffd;
 }
 
+p  {
+  font-size:26px;
+}
+
+div.main {
+	text-align:center;
+	background:#ffd;
+}
+
+div.actual {
+	width:7.5in;
+	height:10in;
+	padding:0in;
+}
+
+div.tableContainer {
+	width:100%;
+}
+
+div.table {
+	text-align:center;
+	margin: 0 auto;
+	display:table;
+}
+
 .bayith {
-	padding-left:1.25ex;
 	display:inline-block;
-	width:1.75in;
+	min-width:2in;
+	display:table-cell;
+	padding-bottom:0px;
+}
+
+.bayith:not(:last-child) {
+	padding-left:1.25ex;
 }
 
 .stanza {
