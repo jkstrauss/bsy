@@ -11,7 +11,7 @@ var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
   $scope.content = (function() {
-    var twoDarray =
+    var hebrewText =
 	[
       ['אֶת־חֻקֶּֽיךָ אֶשְׁמֹר',  'מָתַי אָבוֹא וְאֶרְאֶה',  'יַצֵּב גְּבוּל הַר־מוֹר',  'יִסַּח כָּל־בֵּית גֵּאֶה'],
       ['בְּבֹא כָל־יִשְׂרָאֵל',  'לֵרָאוֹת פְּנֵי אֲדוֹנָיו',  'וְיִהְיוּ צוֹבְאֵי אֲרִיאֵל',  'דּוֹר מְבַקְשֵׁי פָנָיו'],
@@ -36,12 +36,149 @@ app.controller('myCtrl', function($scope) {
       ['שִׂמְחַת עוֹלָם כַּתְּרֵם',  'פְּדוּיֶיךָ יְשׁוּבוּן',  'וְגַם סֻכָּתְךָ הָרֵם',  'בְּשֵׂיבָה עוֹד יְנוּבוּן'],
       ['תְּאֵבֵי יִשְׁעֲךָ קְנֵה',  'עֲנֵם גּֽוּשׁוּ הֲלֹם',  'יְרוּשָׁלִַם בְּנֵה',  'פְּרוֹשׂ עָלֶֽיהָ שָׁלוֹם']
     ];
+
+	var englishText =
+	[
+		[
+			'For your statutes, I am in suspense',
+			'O when will I arrive and see',
+			'He will erect \'round Moriah a fence',
+			'Decimate the house of all haughty'
+		],
+		[
+			'At the arrival of all Israel',
+			'To appear before its Master',
+			'And those previously ganged on Ariel',
+			'Will be a generation wishing to find favor'
+		],
+		[
+			'For our breach construct a wall',
+			'Our stronghold do give might',
+			'A shelter You will be for us all',
+			'Finish off plunderer and parasite'
+		],
+		[
+			'In every direction enunciating',
+			'Receiving the reward of the matter',
+			'How to read the chapter of the king',
+			'Having been done to the letter'
+		],
+		[
+			'The assembly - when the first day ends',
+			'At the end of the sabbattical year',
+			'The reading of the best of dividends',
+			'In the women\'s forecourt - to hear'
+		],
+		[
+			'All absolved from appearing',
+			'Need not assemble to hear',
+			'Besides women who are fitting',
+			'And children - from impurity clear'
+		],
+		[
+			'When the time comes, finally',
+			'A wooden platform - they assemble',
+			'But not prior or too early',
+			'So the space will be ample'
+		],
+		[
+			'The overseer of the assembly',
+			'Lifts up the Torah scroll',
+			'Hands to the head of the assembly',
+			'To elevate the king\'s role'
+		],
+		[
+			'To the second kohen it then pasess',
+			'Subsequently, to the head kohen',
+			'Who gives the scroll written by Moses',
+			'To the king, crowned by his bretheren'
+		],
+		[
+			'He accepts it while standing',
+			'The choice to sit is his option',
+			'Blessing at the start of the teaching',
+			'He Who chose us as His nation'
+		],
+		[
+			'He opens with Deutoronomy',
+			'Until the the Shema\'s conclusion',
+			'Then, "You will have autonomy',
+			'If, to His command is your attention"'
+		],
+		[
+			'To combine the tithe topic',
+			'In Re\'eh and in Ki Thavoh',
+			'Postpone "A king, you wil pick"',
+			'It is written in the middle, though'
+		],
+		[
+			'The king concludes the warnings',
+			'With "blessings and curses"',
+			'The blessings and the readings',
+			'In the Holy Tounge he expresses'
+		],
+		[
+			'Nota B\'thochenu he does recite',
+			'Then prays regarding the services',
+			'With your people Israel find delight',
+			'The thanksgiving parayer he blesses'
+		],
+		[
+			'The festival blessing gets mention',
+			'Then beseaches, continuing on',
+			'O guard the house of convocation',
+			'And finishes, "Dweller of Zion"'
+		],
+		[
+			'Give strength to Your regents',
+			'And ends with, "Elector of Israel"',
+			'Be kind to your priestly agents',
+			'They who bless your nation Israel'
+		],
+		[
+			'Opening his mouth with entreaties',
+			'Until his prayer\'s conclusion',
+			'O save your nation from calamities',
+			'Blessed be The Listener of Supplication'
+		],
+		[
+			'When the land concludes its resting',
+			'Heaven\'s awe impressed with clarity',
+			'By hearing Peretz\'s offspring',
+			'As if from the mouth of the Deity'
+		],
+		[
+			'Be attentive when they shout',
+			'Like the Ketores\'s sweet scents',
+			'Gather in the entire nation',
+			'The men, women, and infants'
+		],
+		[
+			'On Israel have much mercy',
+			'The convert and the citizen',
+			'Why tolerate the blasphemy',
+			'Of those you wish to bludgeon'
+		],
+		[
+			'Eternal joy will them encircle',
+			'Your redeemed will come back',
+			'Also uplift your Tabernacle',
+			'In old age they will not slack'
+		],
+		[
+			'Those desiring Your salvation aquire',
+			'Tell them, "Return; be near"',
+			'Build Jerusalem, burnt by fire',
+			'Spread piece upon her there'
+		]
+	];
     var result = [];
-    angular.forEach(twoDarray, function(stanza, stanzaIndex){
+    angular.forEach(hebrewText, function(stanza, stanzaIndex){
       var newStanza = [];
       angular.forEach(stanza, function(bayith, bayithIndex){
         newStanza.push({
           content: angular.isString(bayith) ? bayith : bayith.content,
+		  englishContent: englishText[stanzaIndex][bayithIndex],
           acrostic: angular.isString(bayith) ? (bayithIndex % 2 == 0 ? 1 : 0) : bayith.acrostic
         });
       });
