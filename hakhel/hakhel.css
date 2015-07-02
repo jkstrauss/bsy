@@ -3,7 +3,7 @@ body {
 }
 
 p  {
-  font-size:27px;
+  font-size:23.5px;
 }
 
 div.main {
@@ -15,6 +15,7 @@ div.actual {
 	width:7.5in;
 	height:10in;
 	padding:0in;
+	margin:.5in;
 }
 
 div.tableContainer {
@@ -29,7 +30,7 @@ div.table {
 
 .bayith {
 	display:inline-block;
-	min-width:2in;
+	min-width:1.75in;
 	display:table-cell;
 	padding-bottom:0px;
 }
