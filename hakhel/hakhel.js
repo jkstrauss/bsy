@@ -50,8 +50,6 @@ app.controller('myCtrl', function($scope) {
 	return result;
   })();
   
-  $scope.charRegex = /^([^\u05d0-\u05ea]*[\u05d0-\u05ea][^\u05d0-\u05ea]*)(.*)$/;
-  
   $scope.letters = function(bayith, other) {
     var number = bayith.acrostic || 0;
     var text = bayith.content;
