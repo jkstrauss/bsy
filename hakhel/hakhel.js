@@ -187,9 +187,14 @@ app.controller('myCtrl', function($scope) {
 	return result;
   })();
   
-  $scope.letters = function(bayith, other) {
-    var number = bayith.acrostic || 0;
-    var text = bayith.content;
+  $scope.bayith = function(stanza, line, column) {
+	return stanza[(line * 2) + ((column + Math.floor(column / 2)) % 2)];
+  }
+  
+  $scope.letters = function(stanza, line, column, other) {
+    var bayith = $scope.bayith(stanza, line, column);
+	var number = bayith.acrostic || 0;
+    var text = bayith[column < 2 ? 'content' : 'englishContent'];
 	if(number == 0){
       return other ? text: '';
     }

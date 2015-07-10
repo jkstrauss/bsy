@@ -30,9 +30,18 @@ div.table {
 
 .bayith {
 	display:inline-block;
-	min-width:1.75in;
 	display:table-cell;
 	padding-bottom:0px;
+}
+
+.bayith.hebrew {
+	min-width:1.5in;
+	font-size:20px;
+}
+
+.bayith.english {
+	min-width:2in;
+	font-size:12px;
 }
 
 .bayith:not(:last-child) {
@@ -57,4 +66,8 @@ div.table {
   content: "";
   display: inline-block;
   width: 100%;
+}
+
+span._1.__0 {
+	padding-left:1.5ex;
 }
