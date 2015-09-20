@@ -13,19 +13,12 @@ div.main {
 
 div.actual {
 	width:7.5in;
-	height:10in;
 	padding:0in;
 	margin:.5in;
 }
 
 div.tableContainer {
 	width:100%;
-}
-
-div.table {
-	text-align:center;
-	margin: 0 auto;
-	display:table;
 }
 
 .bayith {
@@ -68,6 +61,7 @@ div.table {
   width: 100%;
 }
 
-span._1.__0 {
-	padding-left:1.5ex;
+span ._1 {
+	position:relative;
+	left:-20px;
 }
