@@ -52,8 +52,8 @@ app.controller('myCtrl', function($scope) {
 			'Will be a generation wishing to find favor'
 		],
 		[
-			'For our breach construct a wall',
-			'Our stronghold do give might',
+			'For our breach, construct a wall',
+			'To our stronghold, do give might',
 			'A shelter You will be for us all',
 			'Finish off plunderer and parasite'
 		],
@@ -84,11 +84,11 @@ app.controller('myCtrl', function($scope) {
 		[
 			'The overseer of the assembly',
 			'Lifts up the Torah scroll',
-			'Hands to the head of the assembly',
+			'Hands it to the head of the assembly',
 			'To elevate the king\'s role'
 		],
 		[
-			'To the second kohen it then pasess',
+			'To the second kohen, it then pasess',
 			'Subsequently, to the head kohen',
 			'Who gives the scroll written by Moses',
 			'To the king, crowned by his bretheren'
@@ -101,7 +101,7 @@ app.controller('myCtrl', function($scope) {
 		],
 		[
 			'He opens with Deutoronomy',
-			'Until the the Shema\'s conclusion',
+			'Until the Shema\'s conclusion',
 			'Then, "You will have autonomy',
 			'If, to His command is your attention"'
 		],
@@ -118,14 +118,14 @@ app.controller('myCtrl', function($scope) {
 			'In the Holy Tounge he expresses'
 		],
 		[
-			'Nota B\'thochenu he does recite',
+			'Nota B\'thochenu, he does recite',
 			'Then prays regarding the services',
 			'With your people Israel find delight',
-			'The thanksgiving parayer he blesses'
+			'The thanksgiving prayer he blesses'
 		],
 		[
 			'The festival blessing gets mention',
-			'Then beseaches, continuing on',
+			'Then beseeches, continuing on',
 			'O guard the house of convocation',
 			'And finishes, "Dweller of Zion"'
 		],
@@ -160,16 +160,16 @@ app.controller('myCtrl', function($scope) {
 			'Of those you wish to bludgeon'
 		],
 		[
-			'Eternal joy will them encircle',
-			'Your redeemed will come back',
+			'Eternal joy around them encircle',
+			'Your redeemed ones will come back',
 			'Also uplift your Tabernacle',
-			'In old age they will not slack'
+			'In old age, they will not slack'
 		],
 		[
-			'Those desiring Your salvation aquire',
+			'Those desiring Your salvation acquire',
 			'Tell them, "Return; be near"',
 			'Build Jerusalem, burnt by fire',
-			'Spread piece upon her there'
+			'Spread peace upon her there'
 		]
 	];
     var result = [];
