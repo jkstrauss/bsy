@@ -31,6 +31,11 @@
 			<p>
 				בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
 			</p>
+			<div style="text-align:justify;width:5in">
+				<span ng-repeat="note in endNotes">
+					<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
+				</span>
+			</div>
 		</div>
 	</div>
   </body>
