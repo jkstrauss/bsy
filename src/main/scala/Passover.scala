@@ -47,7 +47,7 @@ object Passover extends App {
         if ((stanzaIndex < 6 || lineIndex < 2) && lineIndex != 1) acrostic(line)
         else line.split(" ").zipWithIndex.map {
           case (word, wordIndex) => {
-            val numLetters = if (stanzaIndex == 6 && (wordIndex > 0 || lineIndex < 3)) 1 else 2
+            val numLetters = if (stanzaIndex == 6 && wordIndex == 0 && lineIndex == 3) 2 else 1
             span(
               if (lineIndex == 1 && wordIndex > 0) span(fontFamily := "Times New Roman")(word)
               else if (wordIndex >= 3) word
