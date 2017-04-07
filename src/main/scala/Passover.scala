@@ -39,7 +39,7 @@ object Passover extends App {
   def stanzaToHtml(stanza: Stanza, stanzaIndex: Int) = for((line, lineIndex) <- stanza.zipWithIndex) yield
     if (stanzaIndex == 2) div(display := "table-row")(("פֶּֽסַח" + "\u00A0"), line.split("׃").zipWithIndex.map{
       case (subStanza, i) if i <= 1 => span(display := "table-cell", paddingLeft := 10)(acrostic(subStanza.trim), sofPosuk, " ")
-      case (subStanza, _) => span(display := "table-cell", fontFamily := "Times New Roman")(subStanza, sofPosuk, " ")
+      case (subStanza, _) => span(display := "table-cell", fontWeight := "bold")(subStanza, sofPosuk, " ")
     })
     else div(
       span(display := "inline-block", textAlign := "left", width := "12ex")(if(lineIndex == 0) "לֵיל שִׁמּוּרִים לְ" else ""),
@@ -49,7 +49,7 @@ object Passover extends App {
           case (word, wordIndex) => {
             val numLetters = if (stanzaIndex == 6 && wordIndex == 0 && lineIndex == 3) 2 else 1
             span(
-              if (lineIndex == 1 && wordIndex > 0) span(fontFamily := "Times New Roman")(word)
+              if (lineIndex == 1 && wordIndex > 0) span(fontWeight := "bold")(word)
               else if (wordIndex >= 3) word
               else acrostic(word, numLetters),
               " "
@@ -68,7 +68,7 @@ object Passover extends App {
 
   val outstream = new PrintWriter(Files.newBufferedWriter(Paths.get("target/passover.html"), StandardCharsets.UTF_8, StandardOpenOption.TRUNCATE_EXISTING))
   outstream.println(
-    html(dir := "rtl", fontSize := 15, fontFamily := "Arial")(
+    html(dir := "rtl", fontSize := 15)(
       head(
         meta(charset := "UTF-8")/*,
         meta(httpEquiv := "refresh", content := 3)*/
