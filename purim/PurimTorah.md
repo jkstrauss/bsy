@@ -8,7 +8,7 @@
   .main h3 + h3 {
     margin-top: 0em;
   }
-  .main h3 {
+  .main h3, .main h4 {
     margin-bottom: 0em;
   }
   .main h3 strong {
