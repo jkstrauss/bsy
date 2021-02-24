@@ -2,8 +2,21 @@
   .main {
     font-family: "Times New Roman", Times, Serif
   }
+  h1, h2 {
+    text-align: center;
+  }
+  .main h3 + h3 {
+    margin-top: 0em;
+  }
+  .main h3 {
+    margin-bottom: 0em;
+  }
+  .main p {
+    text-align: justify;
+  }
 </style>
 <div dir="rtl" class="main">
+
 # בכור שושנת יעקב
 
 ## הערות על מגלת אסתר וימי הפורים מאת יוסף קלונימוס בן ישראל הלוי ודריזל שטראוס
