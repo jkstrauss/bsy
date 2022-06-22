@@ -16,16 +16,17 @@
 			<div style="tableContainer">
 				<div class="table">
 					<p ng-repeat="stanza in content" class="stanza">
-							<span class="bayith justify" ng-repeat="bayith in stanza">
-							<span class="acrostic" ng-show="bayith.acrostic">
-								{{letters(bayith)}}<!-- Prevent unwanted spaces
-							--></span><!-- Prevent unwanted spaces
-							--><span><!-- Prevent unwanted spaces
-								-->{{letters(bayith, true)}}.
+						<span ng-repeat="line in [0,1]" class="line">
+							<span class="bayith justify {{column < 2 ? 'hebrew' : 'english'}} {{'_' + line}} {{'__' + column}}" ng-repeat="column in [0,1,2,3]" dir="{{column < 2 ? 'rtl' : 'ltr'}}">
+								<span class="acrostic" ng-show="stanza[column].acrostic && column < 2">
+									{{letters(stanza, line, column, false)}}<!-- Prevent unwanted spaces
+								--></span><!-- Prevent unwanted spaces
+								--><span><!-- Prevent unwanted spaces
+									-->{{letters(stanza, line, column, true)}}.
+								</span> 
 							</span>
 						</span>
-					  </p>
-					<p>
+					</p>
 				</div>
 			</div>
 			<p>

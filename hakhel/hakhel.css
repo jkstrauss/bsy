@@ -13,7 +13,6 @@ div.main {
 
 div.actual {
 	width:7.5in;
-	height:10in;
 	padding:0in;
 	margin:.5in;
 }
@@ -22,17 +21,20 @@ div.tableContainer {
 	width:100%;
 }
 
-div.table {
-	text-align:center;
-	margin: 0 auto;
-	display:table;
-}
-
 .bayith {
 	display:inline-block;
-	min-width:1.75in;
 	display:table-cell;
 	padding-bottom:0px;
+}
+
+.bayith.hebrew {
+	min-width:1.5in;
+	font-size:20px;
+}
+
+.bayith.english {
+	min-width:2in;
+	font-size:12px;
 }
 
 .bayith:not(:last-child) {
@@ -57,4 +59,9 @@ div.table {
   content: "";
   display: inline-block;
   width: 100%;
+}
+
+span ._0.hebrew  .acrostic{
+	position:relative;
+	left:10px;
 }
