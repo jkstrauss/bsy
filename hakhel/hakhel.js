@@ -68,6 +68,8 @@ app.controller('myCtrl', function($scope) {
 			.filter((l, li) => li % 2)
 			.splice(0, 22)
 			.map(l => l.split(/\\\r?\n/))
+			const letters = Array.from('אבגדהוזחטיכלמנסעפצקרשת').map((l, i) => ({l:l,v:i < 10 ? i + 1 : i < 19 ? (i - 8) * 10 : (i - 17) * 100}))
+			const gematria = (s) => Array.from(s).map(c => (letters.find(l => l.l == c) || {}).v || 0).reduce((a, b) => a + b, 0)
 
 			$scope.content = hebrewText
 				.map((stanza, stanzaIndex) =>
@@ -77,10 +79,10 @@ app.controller('myCtrl', function($scope) {
 						acrostic: bayith.acrostic})))
 			$scope.endNotes =
 				it.split(/\r?\n/)
-					.map(l => l.match(/\[\^(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<word>\d))?(-(?<endWord>\d+))?\]: (?<text>.*)/))
+					.map(l => l.match(/\[\^(?<stanza>[א-ת]+)\.(?<bayith>[א-ת]+)(\.(?<word>[א-ת]))?(-(?<endWord>[א-ת]+))?\]: (?<text>.*)/))
 					.filter(l => l)
 					.map(l => l.groups)
-					.map(l => [l.stanza - 0, l.bayith - 0, (l.word || 0) - 0, l.word ? (l.endWord ? (l.endWord - l.word) + 1 : 1) : 0, l.text])
+					.map(l => [gematria(l.stanza), gematria(l.bayith), gematria(l.word || ''), l.word ? (l.endWord ? (gematria(l.endWord) - gematria(l.word)) + 1 : 1) : 0, l.text])
 			$scope.$apply()
 		})
   }
