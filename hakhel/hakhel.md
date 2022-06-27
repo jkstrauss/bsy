@@ -38,7 +38,7 @@ Receiving the reward of the matter\
 How to read the chapter of the king\
 Having been done to the letter
 
-**הַ**קְהֵל מוֹצְאֵי יוֹם־טוֹב\
+**הַ**קְהֵל אַחַר יוֹם־טוֹב\
 מִקֵּץ שְׁנַת הַשְּׁמִטָּה\
 **קְ**רִיאַת לֶֽקַח־טוֹב[^5.3]\
 בְּעֶזְרַת נָשִׁים לְמַֽטָּה[^5.4.3]
