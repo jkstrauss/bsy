@@ -198,14 +198,13 @@ Return us - native and proselyte\
 Why tolerate the blasphemy\
 By nations You soon will fight
 
-
 **שִׂ**מְחַת עוֹלָם[^21.1.2] כַּתְּרֵם[^21.1][^21.1.3]\
-פְּדוּיֶיךָ יְשׁוּבוּן[^21.2]\
+פְּדוּיֶיךָ בְּרִנָּה יְשׁוּבוּן[^21.2]\
 **וְ**גַם סֻכָּתְךָ[^21.3.2] הָרֵם[^21.3][^21.3.3]\
 בְּשֵׂיבָה עוֹד יְנוּבוּן[^21.4]
 
 Eternal joy around them encircle\
-Your redeemed ones will come back\
+Your redeemed with song will come back\
 Also uplift your Tabernacle\
 In old age, they will not slack
 
@@ -320,7 +319,7 @@ Spread peace upon her there
 [^21.1]: כעין ישעיה ל"ה י' ונ"א י"א ושמחת עולם על ראשם
 [^21.1.2]: שלא תפסיק
 [^21.1.3]: על ראשם ככתר
-[^21.2]: שם ושם ופדויי ה' ישובון וגו'
+[^21.2]: שם ושם ופדויי ה' ישובון ובאו ציון ברנה
 [^21.3]: כעין עמוס ט' י'
 [^21.3.2]: בית המקדש ורמז גם לחג הסכות
 [^21.3.3]: תגביה
