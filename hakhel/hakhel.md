@@ -4,9 +4,9 @@
 יִסַּח[^1.4.1] כָּל־בֵּית גֵּאֶה[^1.4]
 
 For your statutes, I am in suspense\
-O when will I arrive and see\
+O when will I arrive and gaze\
 He will erect 'round Moriah a fence\
-Decimate the house of all haughty
+The house of the haughty He'll raze
 
 **בְּ**בֹא כָל־יִשְׂרָאֵל[^2.1]\
 לֵרָאוֹת פְּנֵי אֲדוֹנָיו[^2.2]\
