@@ -101,12 +101,12 @@ Blessing to prepare for teaching\
 
 **כֵּֽ**פֶל תּוֹרָה[^11.1.1-2] מַתְחִיל[^11.1]\
 עַד סוֹף קְרִיאַת שְׁמַע[^11.2]\
-**וְ**אֵת הָאָֽרֶץ תַּנְחִיל[^11.3]\
+**וְ**אֵת הָאֲדָמָה יַנְחִיל[^11.3]\
 אִם שָׁמֺֽעַ תִּשְׁמַע[^11.4]
 
 He opens with Deutoronomy\
 Until the Shema's conclusion\
-Then, "You will have autonomy\
+Then, "In the land autonomy\
 If, to His command is your attention"
 
 **לְ**צָרֵף פַּרְשִׁיּוֹת מַעֲשֵׂר\
