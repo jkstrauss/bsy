@@ -38,7 +38,7 @@ Receiving the reward of the matter\
 "How's read the chapter of the king?"\
 As if it was done to the letter
 
-**הַ**קְהֵל מוֹצְאֵי יוֹם־טוֹב\
+**הַ**קְהֵל אַחַר יוֹם־טוֹב\
 מִקֵּץ שְׁנַת הַשְּׁמִטָּה\
 **קְ**רִיאַת לֶֽקַח־טוֹב[^5.3.2-3]\
 בְּעֶזְרַת נָשִׁים[^5.4.1-2] לְמַֽטָּה[^5.4.3]
