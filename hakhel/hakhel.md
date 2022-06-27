@@ -5,7 +5,7 @@
 
 For your statutes, I am in suspense\
 O when will I arrive and gaze\
-He will erect 'round Moriah a fence\
+Erected 'round Moriah a fence\
 The house of the haughty He'll raze
 
 **בְּ**בֹא כָל־יִשְׂרָאֵל[^2.1]\
