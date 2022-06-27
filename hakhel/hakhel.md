@@ -35,8 +35,8 @@ Finish off plunderer and parasite
 
 In every direction enunciating\
 Receiving the reward of the matter\
-How to read the chapter of the king\
-Having been done to the letter
+"How's read the chapter of the king?"\
+As if it was done to the letter
 
 **הַ**קְהֵל מוֹצְאֵי יוֹם־טוֹב\
 מִקֵּץ שְׁנַת הַשְּׁמִטָּה\
@@ -66,7 +66,7 @@ And children - from impurity clear
 When the time comes, finally\
 A wooden platform - they assemble\
 But not prior or too early\
-So the space will be ample
+So space there will be ample
 
 **חַ**זַּן הַכְּנֶֽסֶת[^8.1]\
 נוֹטֵל בְּיָדוֹ תּוֹרָה\
@@ -76,7 +76,7 @@ So the space will be ample
 The overseer of the assembly\
 Lifts up the Torah scroll\
 Hands it to the head of the assembly\
-To elevate the king's role
+To elevate the king's lofty role
 
 **טִ**לְטְלוֹ[^9.1.1] כֹהֵן שֵׁנִי[^9.1.2-3]\
 וְאַחֲרָיו כֹּהֵן הָרֹאשׁ[^9.2.2-3]\
@@ -94,9 +94,9 @@ To the king, crowned by his bretheren
 אֲשֶׁר בָּֽחַר בָּֽנוּ[^10.4]
 
 He accepts it while standing\
-The choice to sit is his option\
-Blessing at the start of the teaching\
-He Who chose us as His nation
+Reading while sitting - his option\
+The blessing commencing the teaching\
+"He Who chose us as His nation"
 
 **כֵּֽ**פֶל תּוֹרָה[^11.1.1-2] מַתְחִיל[^11.1]\
 עַד סוֹף קְרִיאַת שְׁמַע[^11.2]\
@@ -123,9 +123,9 @@ It is written in the middle, though
 **בְּרָ**כוֹת[^13.3.1] וְגַם תּוֹרוֹת\
 בִּלְשׁוֹן־קֹֽדֶשׁ מְמֻלָּלוֹת[^13.4]
 
-The king concludes the warnings\
-With "blessings and curses"\
-The blessings and the readings\
+The king concludes all the warnings\
+With the topic of "blessings and curses"\
+The blessings and also the readings\
 In the Holy Tounge he expresses
 
 **נָ**טַע בְּתוֹכֵֽנוּ פּוֹצֶה[^14.1][^14.1.3][^14.1]\
@@ -184,9 +184,9 @@ As if from the mouth of the Deity
 הָאֲנָשִׁים וְהַנָּשִׁים וְהַטָּף[^19.4]
 
 Be attentive when they shout\
-Like the Ketores's sweet scents\
+Like to incence's sweet scents\
 Gather in the entire nation\
-The men, women, and infants
+Men, women, children and infants
 
 **רַ**חֵם עַל יִשְׂרָאֵל\
 כָּל־הָאֶזְרָח וְהַגֵּר\
@@ -196,15 +196,15 @@ The men, women, and infants
 On Israel have much mercy\
 The convert and the citizen\
 Why tolerate the blasphemy\
-Of those you wish to bludgeon
+Of nations You'll destroy in derision
 
 **שִׂ**מְחַת עוֹלָם[^21.1.2] כַּתְּרֵם[^21.1][^21.1.3]\
 פְּדוּיֶיךָ יְשׁוּבוּן[^21.2]\
 **וְ**גַם סֻכָּתְךָ[^21.3.2] הָרֵם[^21.3][^21.3.3]\
 בְּשֵׂיבָה עוֹד יְנוּבוּן[^21.4]
 
-Eternal joy around them encircle\
-Your redeemed ones will come back\
+Eternal joy 'round them encircle\
+The redeemed ones will come back\
 Also uplift your Tabernacle\
 In old age, they will not slack
 
