@@ -88,14 +88,14 @@ And the head priest does deliver\
 Inscribed by Moses - a sacred writ\
 To the seed of David, cypress waver
 
-**יְ**קַבֵּל כְּשֶׁהוּא עוֹמֵד[^10.1]\
+**יְ**קַבֵּל תּוֹרָה עוֹמֵד[^10.1]\
 בְּחִירָה לֵישֵׁב מִמֶּֽנּוּ[^10.2]\
-**מְ**בָרֵךְ בְּבֺאוֹ לְלַמֵּד[^10.3.3]\
+**מְ**בָרֵךְ הֲכָנָה לְלַמֵּד[^10.3.3]\
 אֲשֶׁר בָּֽחַר בָּֽנוּ[^10.4]
 
-He accepts it while standing\
+Receiving the Torah while standing\
 The choice to sit is his option\
-Blessing at the start of the teaching\
+Blessing to prepare for teaching\
 He Who chose us as His nation
 
 **כֵּֽ**פֶל תּוֹרָה[^11.1.1-2] מַתְחִיל[^11.1]\
