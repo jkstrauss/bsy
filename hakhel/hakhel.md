@@ -54,7 +54,7 @@ In the women's forecourt - to hear
 וְכָל־טַף בְּלִי טוּמְאָה[^6.4]
 
 All absolved from appearing\
-Need not assemble to hear\
+Need not assemble over there\
 Besides women who are fitting\
 And children - from impurity clear
 
@@ -66,7 +66,7 @@ And children - from impurity clear
 When the time comes, finally\
 A wooden platform - they assemble\
 But not prior or too early\
-So space there will be ample
+Circulation thus enable
 
 **חַ**זַּן הַכְּנֶֽסֶת[^8.1]\
 נוֹטֵל בְּיָדוֹ תּוֹרָה\
@@ -166,7 +166,7 @@ They who bless your nation Israel
 Opening his mouth with entreaties\
 Until his prayer's conclusion\
 O save your nation from calamities\
-Blessed be The Listener of Supplication
+Blessed be The Listener of petition
 
 **צֵ**את שַׁבַּת הָאָֽרֶץ[^18.1]\
 לִקְבּֽוֹעַ יִרְאָה בְרוּרָה[^18.2]\
@@ -183,7 +183,7 @@ As if from the mouth of the Deity
 **הַ**קְהֵל אֶת־הָעָם[^19.3]\
 הָאֲנָשִׁים וְהַנָּשִׁים וְהַטָּף[^19.4]
 
-Be attentive when they shout\
+Be attentive to their supplication\
 Like to incence's sweet scents\
 Gather in the entire nation\
 Men, women, children and infants
