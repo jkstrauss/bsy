@@ -17,7 +17,7 @@
 				<div class="table">
 					<p ng-repeat="stanza in content" class="stanza">
 						<span ng-repeat="line in [0,1]" class="line">
-							<span class="bayith justify {{column < 2 ? 'hebrew' : 'english'}} {{'_' + line}} {{'__' + column}}" ng-repeat="column in [0,1,2,3]" dir="{{column < 2 ? 'rtl' : 'ltr'}}">
+							<span class="bayith justify {{column < 2 ? 'hebrew' : 'english'}} {{'_' + line}} {{'__' + column}}" ng-repeat="column in [0,1,2,3]">
 								<span class="acrostic" ng-show="stanza[column].acrostic && column < 2">
 									{{letters(stanza, line, column, false)}}<!-- Prevent unwanted spaces
 								--></span><!-- Prevent unwanted spaces

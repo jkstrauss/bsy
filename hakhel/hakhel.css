@@ -30,11 +30,13 @@ div.tableContainer {
 .bayith.hebrew {
 	min-width:1.5in;
 	font-size:20px;
+    direction: rtl;
 }
 
 .bayith.english {
 	min-width:2in;
 	font-size:12px;
+    direction: ltr;
 }
 
 .bayith:not(:last-child) {
