@@ -45,6 +45,14 @@ app.controller('myCtrl', function($scope) {
     );
   }
 
+  $scope.punctuation = (column, line) => {
+	  const lang = $scope.displayOption.language(column, line)
+	  const last = $scope.displayOption.last(column, line)
+	  return lang == 'english' ?
+	     (last ? '.' : '') :
+		 (last ? ':' : '.')
+  }
+
   $scope.init = function() {
 	  fetch('hakhel.md')
 		.then(it => it.text())
