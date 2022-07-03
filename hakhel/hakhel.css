@@ -38,6 +38,19 @@ div.tableContainer {
     direction: ltr;
 }
 
+[data-language-equal-size=true] .bayith.english, [data-language-equal-size=true] .bayith.hebrew {
+	width:1.75in;
+}
+
+[data-language-equal-size=true] .bayith.english {
+	font-size: 11px;
+	text-align: center;
+	text-align-last: center;
+	vertical-align: top;
+	height: 2em;
+	position: relative;
+}
+
 .bayith:not(:last-child) {
 	padding-left: .75ex;
 	padding-right: .75ex;
