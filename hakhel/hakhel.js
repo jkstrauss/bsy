@@ -92,6 +92,13 @@ app.controller('myCtrl', function($scope) {
 		bayith: (column, line) => (line * 2) + ((column + Math.floor(column / 2)) % 2),
 		language: (column) => column < 2 ? 'hebrew' : 'english',
 		last: (column, line) => line == 1 && [1, 2].includes(column)
+	}, {
+		name: 'hebrew',
+		display: 'Hebrew Only',
+		lines: [0],
+		bayith: (column) => column,
+		language: () => 'hebrew',
+		last: (column) => column == 3
 	}
   ]
   $scope.displayOption = $scope.displayOptions[0]
