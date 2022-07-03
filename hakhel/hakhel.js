@@ -10,13 +10,10 @@ var app = angular.module('myApp', []);
   
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
-  $scope.endNotes = []
+  var endNotes = []
+  $scope.notes = (stanza) => stanza != null ? endNotes.filter(n => n[0] == stanza) : endNotes
   $scope.content = []
-  
-  $scope.bayith = function(stanza, line, column) {
-	return stanza[(line * 2) + ((column + Math.floor(column / 2)) % 2)];
-  }
-  
+
   $scope.doNote = function(note) {
 	return $scope.content[note[0] - 1][note[1] - 1].content.replace(
     /־/g, ' '
@@ -33,9 +30,10 @@ app.controller('myCtrl', function($scope) {
   };
   
   $scope.letters = function(stanza, line, column, other) {
-    var bayith = $scope.bayith(stanza, line, column);
+    var bayith = stanza[$scope.displayOption.bayith(column, line)];
 	var number = bayith.acrostic || 0;
-    var text = bayith[column < 2 ? 'content' : 'englishContent'];
+	const fields = {hebrew:'content',english:'englishContent'}
+    var text = bayith[fields[$scope.displayOption.language(column, line)]];
 	if(number == 0){
       return other ? text: '';
     }
@@ -75,7 +73,7 @@ app.controller('myCtrl', function($scope) {
 						content: bayith.content,
 						englishContent: englishText[stanzaIndex][bayithIndex],
 						acrostic: bayith.acrostic})))
-			$scope.endNotes =
+			endNotes =
 				it.split(/\r?\n/)
 					.map(l => l.match(/\[\^(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<word>\d))?(-(?<endWord>\d+))?\]: (?<text>.*)/))
 					.filter(l => l)
@@ -84,4 +82,18 @@ app.controller('myCtrl', function($scope) {
 			$scope.$apply()
 		})
   }
+
+  $scope.displayOptions = [
+    {
+		name: 'translateHalfStanza',
+		offsetAcrostic: true,
+		display: 'Translation in parralel (half stanza)',
+		lines: [0, 1],
+		bayith: (column, line) => (line * 2) + ((column + Math.floor(column / 2)) % 2),
+		language: (column) => column < 2 ? 'hebrew' : 'english',
+		last: (column, line) => line == 1 && [1, 2].includes(column)
+	}
+  ]
+  $scope.displayOption = $scope.displayOptions[0]
+  $scope.printMode = false
 });

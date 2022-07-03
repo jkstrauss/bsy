@@ -23,28 +23,29 @@ div.tableContainer {
 
 .bayith {
 	display:inline-block;
-	display:table-cell;
 	padding-bottom:0px;
 }
 
 .bayith.hebrew {
-	min-width:1.5in;
-	font-size:20px;
+	width:1.5in;
+	font-size:19px;
     direction: rtl;
 }
 
 .bayith.english {
-	min-width:2in;
-	font-size:12px;
+	width:2in;
+	font-size:11px;
     direction: ltr;
 }
 
 .bayith:not(:last-child) {
-	padding-left:1.25ex;
+	padding-left: .75ex;
+	padding-right: .75ex;
 }
 
 .stanza {
-	display:table-row;
+	display: inline-block;
+	margin: 0px;
 }
 
 .acrostic {
@@ -56,7 +57,12 @@ div.tableContainer {
 	text-align-last: justify
 }
 
-span ._0.hebrew  .acrostic{
+[data-offset-acrostic=true] .line_0.col_0.hebrew  .acrostic{
 	position:relative;
-	left:10px;
+	left:.75em;
+}
+
+[data-offset-acrostic=true] .acrostic{
+	position:relative;
+	left:.25em;
 }
