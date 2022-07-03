@@ -99,6 +99,14 @@ app.controller('myCtrl', function($scope) {
 		bayith: (column) => column,
 		language: () => 'hebrew',
 		last: (column) => column == 3
+	}, {
+		name: 'interlinear',
+		languageEqualSize: true,
+		display: 'Interlinear',
+		lines: [0, 1],
+		bayith: (column, line) => column,
+		language: (column, line) => line == 0 ? 'hebrew' : 'english',
+		last: (column, line) => line == 0 && column == 3
 	}
   ]
   $scope.displayOption = $scope.displayOptions[0]
