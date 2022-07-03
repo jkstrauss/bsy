@@ -14,11 +14,11 @@
 				<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימוס ב"ר ישראל הלוי</p>
 			</h1>
 			<div style="tableContainer">
-				<div class="table">
-					<p ng-repeat="stanza in content" class="stanza">
-						<span ng-repeat="line in [0,1]" class="line">
-							<span class="bayith justify {{column < 2 ? 'hebrew' : 'english'}} {{'_' + line}} {{'__' + column}}" ng-repeat="column in [0,1,2,3]">
-								<span class="acrostic" ng-show="stanza[column].acrostic && column < 2">
+				<div class="table" data-offset-acrostic="{{displayOption.offsetAcrostic}}">
+					<p ng-repeat="stanza in content" class="stanza" ng-="sIndex = $index">
+						<span ng-repeat="line in displayOption.lines" class="line">
+							<span ng-repeat="column in [0,1,2,3]" class="bayith justify {{displayOption.language(column, line)}} {{'line_' + line}} {{'col_' + column}}" >
+								<span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(column, line) != 'english'">
 									{{letters(stanza, line, column, false)}}<!-- Prevent unwanted spaces
 								--></span><!-- Prevent unwanted spaces
 								--><span><!-- Prevent unwanted spaces
@@ -33,7 +33,7 @@
 				בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
 			</p>
 			<div style="text-align:justify">
-				<span ng-if="content.length" ng-repeat="note in endNotes">
+				<span ng-if="content.length" ng-repeat="note in notes()">
 					<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
 				</span>
 			</div>
