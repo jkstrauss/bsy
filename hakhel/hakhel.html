@@ -8,6 +8,14 @@
 	</head>
 	<body dir="rtl" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
 	<div class="main">
+	    <div ng-show="!printMode">
+			<div>
+				<select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
+			</div>
+			<div>
+				Print Mode <input type="checkbox" ng-model="printMode"/>
+			</div>
+		</div>
 		<div class="actual">
 			<h1>
 				<p>תוספת לליל שני של סוכות למוצאי שנת  השמטה</p>
