@@ -22,7 +22,7 @@
 				<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימוס ב"ר ישראל הלוי</p>
 			</h1>
 			<div style="tableContainer">
-				<div class="table" data-offset-acrostic="{{displayOption.offsetAcrostic}}">
+				<div class="table" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
 					<p ng-repeat="stanza in content" class="stanza" ng-="sIndex = $index">
 						<span ng-repeat="line in displayOption.lines" class="line">
 							<span ng-repeat="column in [0,1,2,3]" class="bayith justify {{displayOption.language(column, line)}} {{'line_' + line}} {{'col_' + column}}" >
