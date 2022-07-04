@@ -114,7 +114,7 @@ app.controller('myCtrl', function($scope) {
 		lines: [0, 1],
 		bayith: (column, line) => column,
 		language: (column, line) => line == 0 ? 'hebrew' : 'english',
-		last: (column) => false
+		last: (column, line) => line == 0 && column == 3
 	}
   ]
   $scope.displayOption = $scope.displayOptions[0]
