@@ -1,4 +1,4 @@
-﻿function log(val, message) {
+function log(val, message) {
     if (message) console.log(message);
     console.log(JSON.stringify(val));
     return val;
@@ -10,48 +10,33 @@ var app = angular.module('myApp', []);
   
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
-  var endNotes = []
-  $scope.notes = (stanza) => stanza != null ? endNotes.filter(n => n[0] == stanza) : endNotes
-  $scope.content = []
-
-  $scope.doNote = function(note) {
-	return $scope.content[note[0] - 1][note[1] - 1].content.replace(
-    /־/g, ' '
-  ).replace(
-    /[^ﭏא-ת ]/g, ''
-  ).replace(
-    new RegExp (
-        '([^ ]+ ){'+(note[2] -1 )+'}(([^ ]+ ){'+(note[3]-1)+'}[^ ]+).*'
-      ),
-      '$2'
-  );
-  };
+  $scope.markdown = new URL(window.location.href).searchParams.get('markdown')
+  $scope.error = false
   
-  $scope.letters = function(stanza, line, column, other) {
-    var bayith = stanza[$scope.displayOption.bayith(column, line)];
-	var number = bayith.acrostic || 0;
-	const fields = {hebrew:'content',english:'englishContent'}
-    var text = bayith[fields[$scope.displayOption.language(column, line)]];
-	if(number == 0){
-      return other ? text: '';
-    }
-    return text.replace(
-      new RegExp(
-        '^([^\u05d0-\u05ea]*([\u05d0-\u05ea][^\u05d0-\u05ea]*){' + number + '})(.*)$'
-      ),
-      other ? '$3' : '$1'
-    );
+    $scope.init = () => {
+    if($scope.markdown) {
+		fetch($scope.markdown)
+		    .then(it => {
+				if(!it.ok) {
+					$scope.error = it.status
+					$scope.$apply()
+				} else {
+					return it.text()
+				}
+			}).then(it => {
+				$scope.notes = it.match(/\[\^.*?\]/g)
+					.reduce((a, n) => a.includes(n) ? a : a.concat([n]), [])
+					.map(n => {
+						const replaced = n.replace(/([\[\.\]\^])/g, '\\$1')
+						const textReference = it.match(new RegExp(`(?!\n)${replaced}(?!: )`, 'g'))
+						return {key: n, textReference: textReference}
+					})
+				$scope.$apply()
+			})
+	  }
   }
-
-  $scope.punctuation = (column, line) => {
-	  const lang = $scope.displayOption.language(column, line)
-	  const last = $scope.displayOption.last(column, line)
-	  return lang == 'english' ?
-	     (last ? '.' : '') :
-		 (last ? ':' : '.')
-  }
-
-  $scope.init = function() {
+ 
+  $scope.init2 = function() {
 	  fetch('hakhel.md')
 		.then(it => it.text())
 		.then(it => {
