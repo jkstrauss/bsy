@@ -13,34 +13,39 @@
 				<select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
 			</div>
 			<div>
+				<select ng-model="noteOption" ng-options="o.display for o in noteOptions" ></select>
+			</div>
+			<div>
 				Print Mode <input type="checkbox" ng-model="printMode"/>
 			</div>
 		</div>
 		<div class="actual">
-			<h1>
-				<p>תוספת לליל שני של סוכות למוצאי שנת  השמטה</p>
-				<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימוס ב"ר ישראל הלוי</p>
-			</h1>
-			<div style="tableContainer">
-				<div class="table" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
-					<p ng-repeat="stanza in content" class="stanza" ng-="sIndex = $index">
-						<span ng-repeat="line in displayOption.lines" class="line">
-							<span ng-repeat="column in [0,1,2,3]" class="bayith justify {{displayOption.language(column, line)}} {{'line_' + line}} {{'col_' + column}}" >
-								<span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(column, line) != 'english'">
-									{{letters(stanza, line, column, false)}}<!-- Prevent unwanted spaces
-								--></span><!-- Prevent unwanted spaces
-								--><span><!-- Prevent unwanted spaces
-									-->{{letters(stanza, line, column, true)}}{{punctuation(column, line)}}
-								</span> 
+		    <div ng-show="noteOption.text">
+				<h1>
+					<p>תוספת לליל שני של סוכות למוצאי שנת  השמטה</p>
+					<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימוס ב"ר ישראל הלוי</p>
+				</h1>
+				<div style="tableContainer">
+					<div class="table" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
+						<p ng-repeat="stanza in content" class="stanza" ng-="sIndex = $index">
+							<span ng-repeat="line in displayOption.lines" class="line">
+								<span ng-repeat="column in [0,1,2,3]" class="bayith justify {{displayOption.language(column, line)}} {{'line_' + line}} {{'col_' + column}}" >
+									<span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(column, line) != 'english'">
+										{{letters(stanza, line, column, false)}}<!-- Prevent unwanted spaces
+									--></span><!-- Prevent unwanted spaces
+									--><span><!-- Prevent unwanted spaces
+										-->{{letters(stanza, line, column, true)}}{{punctuation(column, line)}}
+									</span> 
+								</span>
 							</span>
-						</span>
-					</p>
+						</p>
+					</div>
 				</div>
+				<p>
+					בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
+				</p>
 			</div>
-			<p>
-				בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
-			</p>
-			<div style="text-align:justify">
+			<div style="text-align:justify" ng-show="noteOption.notes">
 				<span ng-if="content.length" ng-repeat="note in notes()">
 					<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
 				</span>
