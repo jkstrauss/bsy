@@ -83,10 +83,10 @@ app.controller('myCtrl', function($scope) {
 						acrostic: bayith.acrostic})))
 			endNotes =
 				it.split(/\r?\n/)
-					.map(l => l.match(/\[\^(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<word>\d))?(-(?<endWord>\d+))?\]: (?<text>.*)/))
-					.filter(l => l)
-					.map(l => l.groups)
-					.map(l => [l.stanza - 0, l.bayith - 0, (l.word || 0) - 0, l.word ? (l.endWord ? (l.endWord - l.word) + 1 : 1) : 0, l.text])
+					.map(n => n.match(/\[\^(?<note>(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<word>\d))?(-(?<endWord>\d+))?)\]: (?<text>.*)/))
+					.filter(n => n)
+					.map(n => n.groups)
+					.map(n => [n.stanza - 0, n.bayith - 0, (n.word || 0) - 0, n.word ? (n.endWord ? (n.endWord - n.word) + 1 : 1) : 0, n.text])
 			$scope.$apply()
 		})
   }
