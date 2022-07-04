@@ -18,8 +18,6 @@ app.controller('myCtrl', function($scope) {
 	return $scope.content[note[0] - 1][note[1] - 1].content.replace(
     /־/g, ' '
   ).replace(
-	/וֹ/g, 'ו'
-  ).replace(
     /[^ﭏא-ת ]/g, ''
   ).replace(
     new RegExp (
