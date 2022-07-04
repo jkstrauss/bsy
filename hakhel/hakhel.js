@@ -10,18 +10,13 @@ var app = angular.module('myApp', []);
   
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
-  $scope.endNotes = []
+  var endNotes = []
+  $scope.notes = (stanza) => stanza != null ? endNotes.filter(n => n[0] == stanza) : endNotes
   $scope.content = []
-  
-  $scope.bayith = function(stanza, line, column) {
-	return stanza[(line * 2) + ((column + Math.floor(column / 2)) % 2)];
-  }
-  
+
   $scope.doNote = function(note) {
 	return $scope.content[note[0] - 1][note[1] - 1].content.replace(
     /־/g, ' '
-  ).replace(
-	/וֹ/g, 'ו'
   ).replace(
     /[^ﭏא-ת ]/g, ''
   ).replace(
@@ -33,9 +28,10 @@ app.controller('myCtrl', function($scope) {
   };
   
   $scope.letters = function(stanza, line, column, other) {
-    var bayith = $scope.bayith(stanza, line, column);
+    var bayith = stanza[$scope.displayOption.bayith(column, line)];
 	var number = bayith.acrostic || 0;
-    var text = bayith[column < 2 ? 'content' : 'englishContent'];
+	const fields = {hebrew:'content',english:'englishContent'}
+    var text = bayith[fields[$scope.displayOption.language(column, line)]];
 	if(number == 0){
       return other ? text: '';
     }
@@ -45,6 +41,14 @@ app.controller('myCtrl', function($scope) {
       ),
       other ? '$3' : '$1'
     );
+  }
+
+  $scope.punctuation = (column, line) => {
+	  const lang = $scope.displayOption.language(column, line)
+	  const last = $scope.displayOption.last(column, line)
+	  return lang == 'english' ?
+	     (last ? '.' : '') :
+		 (last ? ':' : '.')
   }
 
   $scope.init = function() {
@@ -75,13 +79,59 @@ app.controller('myCtrl', function($scope) {
 						content: bayith.content,
 						englishContent: englishText[stanzaIndex][bayithIndex],
 						acrostic: bayith.acrostic})))
-			$scope.endNotes =
+			endNotes =
 				it.split(/\r?\n/)
-					.map(l => l.match(/\[\^(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<word>\d))?(-(?<endWord>\d+))?\]: (?<text>.*)/))
-					.filter(l => l)
-					.map(l => l.groups)
-					.map(l => [l.stanza - 0, l.bayith - 0, (l.word || 0) - 0, l.word ? (l.endWord ? (l.endWord - l.word) + 1 : 1) : 0, l.text])
+					.map(n => n.match(/\[\^(?<note>(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<word>\d))?(-(?<endWord>\d+))?)\]: (?<text>.*)/))
+					.filter(n => n)
+					.map(n => n.groups)
+					.map(n => [n.stanza - 0, n.bayith - 0, (n.word || 0) - 0, n.word ? (n.endWord ? (n.endWord - n.word) + 1 : 1) : 0, n.text])
 			$scope.$apply()
 		})
   }
+
+  $scope.displayOptions = [
+    {
+		name: 'translateHalfStanza',
+		offsetAcrostic: true,
+		display: 'Translation in parralel (half stanza)',
+		lines: [0, 1],
+		bayith: (column, line) => (line * 2) + ((column + Math.floor(column / 2)) % 2),
+		language: (column) => column < 2 ? 'hebrew' : 'english',
+		last: (column, line) => line == 1 && [1, 2].includes(column)
+	}, {
+		name: 'hebrew',
+		display: 'Hebrew Only',
+		lines: [0],
+		bayith: (column) => column,
+		language: () => 'hebrew',
+		last: (column) => column == 3
+	}, {
+		name: 'interlinear',
+		languageEqualSize: true,
+		display: 'Interlinear',
+		lines: [0, 1],
+		bayith: (column, line) => column,
+		language: (column, line) => line == 0 ? 'hebrew' : 'english',
+		last: (column, line) => line == 0 && column == 3
+	}
+  ]
+  $scope.noteOptions = [
+    {
+		name: 'all',
+		display: 'Show All',
+		text: true,
+		notes: true
+	}, {
+		name: 'notes',
+		display: 'Notes Only',
+		notes: true
+	}, {
+		name: 'text',
+		display: 'Text Only',
+		text: true
+	}
+  ]
+  $scope.displayOption = $scope.displayOptions[0]
+  $scope.noteOption = $scope.noteOptions[0]
+  $scope.printMode = false
 });
