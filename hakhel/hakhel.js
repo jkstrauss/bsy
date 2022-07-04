@@ -115,6 +115,23 @@ app.controller('myCtrl', function($scope) {
 		last: (column, line) => line == 0 && column == 3
 	}
   ]
+  $scope.noteOptions = [
+    {
+		name: 'all',
+		display: 'Show All',
+		text: true,
+		notes: true
+	}, {
+		name: 'notes',
+		display: 'Notes Only',
+		notes: true
+	}, {
+		name: 'text',
+		display: 'Text Only',
+		text: true
+	}
+  ]
   $scope.displayOption = $scope.displayOptions[0]
+  $scope.noteOption = $scope.noteOptions[0]
   $scope.printMode = false
 });
