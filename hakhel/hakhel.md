@@ -43,8 +43,8 @@ As if it was done to the letter
 **קְ**רִיאַת לֶֽקַח טוֹב[^5.3.2-3]\
 בְּעֶזְרַת נָשִׁים[^5.4.1-2] לְמַֽטָּה[^5.4.3]
 
-The assembly - when the first day ends\
-During Sukkoth after the sabbattical year\
+Assemble when the first day ends\
+At Sukkoth after the sabbattical year\
 The reading of the best of dividends\
 In the women's forecourt - to hear
 
@@ -125,7 +125,7 @@ It is written in the middle, though
 בִּלְשׁוֹן קֹֽדֶשׁ מְמֻלָּלוֹת[^13.4.3][^13.4]
 
 The king concludes all the warnings\
-With the topic of "blessings and curses"\
+With the "blessings and curses"\
 The blessings and also the readings\
 In the Holy Tounge he expresses
 
@@ -145,7 +145,7 @@ The thanksgiving prayer he blesses
 גוֹמֵר הַשּׁוֹכֵן בְּצִיּוֹן
 
 The order of the festival blessing\
-Arranged with word and concentration\
+Words expressed in concentration\
 O guard the tent of meeting\
 And finishes, "Dweller of Zion"
 
@@ -156,7 +156,7 @@ And finishes, "Dweller of Zion"
 
 Give strength to Your regents\
 O Elector of Israel\
-The appeasement of your priestly agents\
+The appeasement of your agents\
 O Sanctifier of priests take well
 
 **פּ**וֹתֵֽחַ פִּיו בְּשַׁוְעָה[^17.1]\
@@ -205,7 +205,7 @@ By nations You soon will fight
 בְּשֵׂיבָה עוֹד יְנוּבוּן[^21.4]
 
 Eternal joy 'round them encircle\
-The redeemed with song will come back\
+The redeemed with song will be back\
 Also uplift David's Tabernacle\
 In old age, they will not slack
 
