@@ -43,8 +43,8 @@ As if it was done to the letter
 **קְ**רִיאַת לֶֽקַח טוֹב[^5.3.2-3]\
 בְּעֶזְרַת נָשִׁים[^5.4.1-2] לְמַֽטָּה[^5.4.3]
 
-The assembly - when the first day ends\
-During Sukkoth after the sabbattical year\
+Assemble when the first day ends\
+At Sukkoth after the sabbattical year\
 The reading of the best of dividends\
 In the women's forecourt - to hear
 
@@ -68,7 +68,7 @@ A wooden platform - they assemble\
 But not before the time arrives\
 Circulation in the forecourt to enable
 
-**חַ**זַּן הַכְּנֶֽסֶת[^8.1]\
+**חַ**זַּן[^8.1.1] עִסְקֵי הַכְּנֶֽסֶת[^8.1]\
 נוֹטֵל סֵֽפֶר עֲזָרָה[^8.2.2-3]\
 **נ**וֹתֵן לְרֹאשׁ כְּנֶֽסֶת[^8.3.2-3]\
 לַרְבּוֹת בַּמֶּֽלֶךְ שְׂרָרָה[^8.4]
@@ -119,13 +119,13 @@ In Re'eh and Ki Thavoh\
 "Limit horses and riders"\
 It is written in the middle, though
 
-**מֶֽ**לֶךְ גּוֹמֵר אַזְהָרוֹת[^13.1]\
+**מֶֽ**לֶךְ גּוֹמֵר לִקְרוֹת[^13.1]\
 בְּעִנְיַן בְּרָכוֹת וּקְלָלוֹת[^13.2]\
 **בְּרָ**כוֹת[^13.3.1] וְגַם תּוֹרוֹת\
 בִּלְשׁוֹן קֹֽדֶשׁ מְמֻלָּלוֹת[^13.4.3][^13.4]
 
 The king concludes all the warnings\
-With the topic of "blessings and curses"\
+With the "blessings and curses"\
 The blessings and also the readings\
 In the Holy Tounge he expresses
 
@@ -142,21 +142,21 @@ The thanksgiving prayer he blesses
 **סֵֽ**דֶר בִּרְכַּת מוֹעֵד[^15.1]\
 עוֹרֵךְ בְּנִיב[^15.2.2] וְהִגָּיוֹן[^15.2.3][^15.2]\
 **שְׁ**מֹר אֹֽהֶל מוֹעֵד[^15.3.2-3]\
-גוֹמֵר הַשּׁוֹכֵן בְּצִיּוֹן
+חוֹתֵם הַשּׁוֹכֵן בְּצִיּוֹן
 
 The order of the festival blessing\
-Arranged with word and concentration\
+Words expressed in concentration\
 O guard the tent of meeting\
 And finishes, "Dweller of Zion"
 
 **עֺ**ז תִּתֵּן לְמַלְכֶּֽךָ[^16.1]\
-הַבּוֹחֵר בְּיִשְׂרָאֵל\
+אַתָּה הַבּוֹחֵר בְּיִשְׂרָאֵל\
 **רִ**צּוּי[^16.3.1] שְׁלוּחֵי עֲבֺדָתֶֽךָ[^16.3.2-3][^16.3]\
 מְקַדֵּשׁ הַכֹּהֲנִים[^16.4.1-2] הוֹאֵל[^16.4.3][^16.4]
 
 Give strength to Your regents\
 O Elector of Israel\
-The appeasement of your priestly agents\
+The appeasement of your agents\
 O Sanctifier of priests take well
 
 **פּ**וֹתֵֽחַ פִּיו בְּשַׁוְעָה[^17.1]\
@@ -205,7 +205,7 @@ By nations You soon will fight
 בְּשֵׂיבָה עוֹד יְנוּבוּן[^21.4]
 
 Eternal joy 'round them encircle\
-The redeemed with song will come back\
+The redeemed with song will be back\
 Also uplift David's Tabernacle\
 In old age, they will not slack
 
@@ -255,7 +255,8 @@ Spread peace upon her there
 [^7.3.1-2]: בראשית ל"ז י"ח ופירושו אף קודם יו"ט
 [^7.3.3]: יש להמניע מעשיית הבימה או הקריאה עצמה
 [^7.4]: לפי הירושלמי במסכת מגלה פ"א ה"ד למה אין עושין הקהל בשבת מפני הבימה ויעשו מאתמול שלא לדחוק העזרה ופירש שם קרבן העדה שביו"ט היו מביאין קרבנותיהן וכו' והיו צריכין ריוח גדול והבימה גדולה ורחבה ומקצרה והנה התוס' (סוטה מ"א.) כתבו שמדאורייתא אין הקהל עד מוצאי יו"ט משום דכתיב במועד דמשמע בתוך המועד ולא בתחלתו וכתיב בבא כל ישראל דמשמע שם מאתחלתא דמועד ולדבריהם יש לפרש לשון הפיוט שקודם מוצאי יו"ט אין לעשות ההקהל שלא יהיו המקראות דחוקים
-[^8.1]: פרש"י בסוטה דף מ: שמש
+[^8.1.1]: עיין תוי"ט מסכת יומא פ"ז מ"א לשון חוזה שצריך לראות מה הם צרכי צבור
+[^8.1]: לשון המשנה חזן הכנסת ופרש"י בדף מ: שמש הכנסת שטורח עיסקי הכנסת
 [^8.2.2-3]: עיין רש"י בבא בתרא י"ד. ספר שכתב משה ובו קורין בעזרה [של נשים] פרשת המלך בהקהל נ"א סֵֽפֶר עֶזְרָא על פי מועד קטן י"ח: במשנה
 [^8.3.2-3]: לפרש"י שם הוא מה שאנו קורין גבאי
 [^8.4]: שם בגמרא דף מא. כולה משום כבוד המלך ופרש"י בדף מ: שמראין את מעלותיו מעלה למעלה ממעלה
