@@ -142,7 +142,7 @@ The thanksgiving prayer he blesses
 **סֵֽ**דֶר בִּרְכַּת מוֹעֵד[^15.1]\
 עוֹרֵךְ בְּנִיב[^15.2.2] וְהִגָּיוֹן[^15.2.3][^15.2]\
 **שְׁ**מֹר אֹֽהֶל מוֹעֵד[^15.3.2-3]\
-גוֹמֵר הַשּׁוֹכֵן בְּצִיּוֹן
+חוֹתֵם הַשּׁוֹכֵן בְּצִיּוֹן
 
 The order of the festival blessing\
 Words expressed in concentration\
