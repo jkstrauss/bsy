@@ -142,12 +142,12 @@ The thanksgiving prayer he blesses
 **סֵֽ**דֶר בִּרְכַּת מוֹעֵד[^15.1]\
 עוֹרֵךְ בְּנִיב[^15.2.2] וְהִגָּיוֹן[^15.2.3][^15.2]\
 **שְׁ**מֹר אֹֽהֶל מוֹעֵד[^15.3.2-3]\
-חוֹתֵם הַשּׁוֹכֵן בְּצִיּוֹן
+מֶּלֶךְ הַשּׁוֹכֵן בְּצִיּוֹן
 
 The order of the festival blessing\
 Words expressed in concentration\
 O guard the tent of meeting\
-And finishes, "Dweller of Zion"
+O King, "Dweller of Zion"
 
 **עֺ**ז תִּתֵּן לְמַלְכֶּֽךָ[^16.1]\
 אַתָּה הַבּוֹחֵר בְּיִשְׂרָאֵל\
