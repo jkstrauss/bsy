@@ -15,7 +15,12 @@ app.controller('myCtrl', function($scope) {
   $scope.content = []
 
   $scope.doNote = function(note) {
-	return $scope.content[note[0] - 1][note[1] - 1].content.replace(
+    const contentTarget =
+		note[0] < 1 ? $scope.intro[note[1] - 1] : 
+		note[0] > 22 ? $scope.end :
+		$scope.content[note[0] - 1][note[1] - 1].content
+		
+	return contentTarget.replace(
     /־/g, ' '
   ).replace(
     /[^ﭏא-ת ]/g, ''
@@ -55,11 +60,21 @@ app.controller('myCtrl', function($scope) {
 	  fetch('hakhel.md')
 		.then(it => it.text())
 		.then(it => {
-			const hebrewText = it.split(/\r?\n\r?\n/)
+			$scope.intro = it.split(/\n\n/)
+				.splice(0, 3)
+				.map(l => l.replace(/\[.*?\]/g, ''))
+				.map(l => l.replace(/# /g, ''))
+
+			const allText = it.split(/\n/)
+			    .splice(6)
+				.join('\n')
+				.split('\n\n')
+			$scope.end = allText.splice(44)[0].replace(/\[.*?\]/g, '')
+			const hebrewText = allText
 			.filter((l, li) => li % 2 == 0)
 			.splice(0, 22)
 			.map(l => l.replace(/\[.*?\]/g, ''))
-			.map(l => l.split(/\\\r?\n/)
+			.map(l => l.split(/\\\n/)
 				.map(b => { return {
 					acrostic: b
 						.replace(/[^*ﭏא-ת ]/g, '')
@@ -68,10 +83,10 @@ app.controller('myCtrl', function($scope) {
 					content: b
 					.replaceAll('**', '')}}))
 			    var result = [];
-			const englishText = it.split(/\r?\n\r?\n/)
+			const englishText = allText
 			.filter((l, li) => li % 2)
 			.splice(0, 22)
-			.map(l => l.split(/\\\r?\n/))
+			.map(l => l.split(/\\\n/))
 
 			$scope.content = hebrewText
 				.map((stanza, stanzaIndex) =>
