@@ -7,51 +7,67 @@
 	
 	</head>
 	<body dir="rtl" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
-	<div class="main">
-	    <div ng-show="!printMode">
-			<div>
-				<select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
-			</div>
-			<div>
-				<select ng-model="noteOption" ng-options="o.display for o in noteOptions" ></select>
-			</div>
-			<div>
-				Print Mode <input type="checkbox" ng-model="printMode"/>
-			</div>
-		</div>
-		<div class="actual">
-		    <div ng-show="noteOption.text">
-				<h1>
-					<p>תוספת לליל שני של סוכות למוצאי שנת  השמטה</p>
-					<p>ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים: יוסף קלונימוס ב"ר ישראל הלוי</p>
-				</h1>
-				<div style="tableContainer">
-					<div class="table" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
-						<p ng-repeat="stanza in content" class="stanza" ng-="sIndex = $index">
-							<span ng-repeat="line in displayOption.lines" class="line">
-								<span ng-repeat="column in [0,1,2,3]" class="bayith justify {{displayOption.language(column, line)}} {{'line_' + line}} {{'col_' + column}}" >
-									<span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(column, line) != 'english'">
-										{{letters(stanza, line, column, false)}}<!-- Prevent unwanted spaces
-									--></span><!-- Prevent unwanted spaces
-									--><span><!-- Prevent unwanted spaces
-										-->{{letters(stanza, line, column, true)}}{{punctuation(column, line)}}
-									</span> 
-								</span>
-							</span>
-						</p>
+		<div class="main">
+			<div class="actual">
+				<div class="hide-print">
+					<div>
+						<select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
+					</div>
+					<div>
+						<select ng-model="noteOption" ng-options="o.display for o in noteOptions" ></select>
+					</div>
+				</div>		
+				<div ng-show="noteOption.text">
+					<div class="coverPageWrapper">
+						<div class="coverPage">
+							<h1>
+								<p>
+									תוספת לליל שני של סוכות למוצאי שנת  השמטה
+								</p>
+							</h1>
+							<h1>
+								<p>
+									ע"ס א"ב וחתום בו שם המחבר בחלק שני של החרוזים:<br/>
+									יוסף קלונימוס ב"ר ישראל הלוי
+								</p>
+							</h1>
+						</div>
+					</div>
+					<div class="pages" data-display-option="{{displayOption.name}}" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
+						<div class="page" ng-repeat="page in displayOption.pages || [0]">
+							<div style="tableContainer">
+								<div>								
+									<p ng-repeat="stanza in content" class="stanza">
+										<span ng-repeat="line in displayOption.lines" class="line">
+											<span 
+												ng-repeat="column in [0,1,2,3] track by column + '_' + line + '_' + page"
+												ng-init="obj={line:line,column:column,page:page}"
+												class="bayith justify {{displayOption.language(obj)}} {{'line_' + line}} {{'col_' + column}} {{'page_' + page}}"
+											>
+												<span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(obj) != 'english'">
+													{{letters(stanza, obj, false)}}<!-- Prevent unwanted spaces
+												--></span><!-- Prevent unwanted spaces
+												--><span><!-- Prevent unwanted spaces
+													-->{{letters(stanza, obj, true)}}{{punctuation(obj)}}
+												</span> 
+											</span>
+										</span>
+									</p>
+									<p ng-show="page == 0">
+										בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="text-align:justify" ng-show="noteOption.notes">
+						<span ng-if="content.length" ng-repeat="note in notes()">
+							<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
+						</span>
 					</div>
 				</div>
-				<p>
-					בא"י פורס סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים.
-				</p>
-			</div>
-			<div style="text-align:justify" ng-show="noteOption.notes">
-				<span ng-if="content.length" ng-repeat="note in notes()">
-					<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
-				</span>
 			</div>
 		</div>
-	</div>
-  </body>
+	</body>
   
 </html>
