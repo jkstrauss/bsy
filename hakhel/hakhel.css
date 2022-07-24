@@ -44,11 +44,11 @@ div.tableContainer {
 }
 
 [data-language-equal-size=true][data-display-option=interlinear] .bayith.hebrew {
-	height: 18px;
+	height: 21px;
 }
 
 [data-language-equal-size=true][data-display-option=interlinear] .bayith.english {
-	height: 15px;
+	height: 12px;
 }
 
 [data-language-equal-size=true] .bayith.hebrew {
