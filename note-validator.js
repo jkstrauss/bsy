@@ -16,6 +16,7 @@ app.controller('myCtrl', function($scope) {
 	 const groups = n
 		.match(/(\[\^(?<stanza>\d+)\.(?<bayith>\d+)(\.(?<start>\d+)(-(?<end>\d+))?)?\])?/)
 		.groups
+	groups.stanza = +groups.stanza
 	groups.word = groups.end || groups.start
 	return groups
   }

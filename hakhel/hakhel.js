@@ -23,7 +23,7 @@ app.controller('myCtrl', function($scope) {
 	return contentTarget.replace(
     /־/g, ' '
   ).replace(
-    /[^ﭏא-ת ]/g, ''
+    /[^ﭏא-ת" ]/g, ''
   ).replace(
     new RegExp (
         '([^ ]+ ){'+(note[2] -1 )+'}(([^ ]+ ){'+(note[3]-1)+'}[^ ]+).*'
