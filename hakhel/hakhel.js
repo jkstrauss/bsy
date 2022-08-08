@@ -6,7 +6,7 @@
   
   
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngSanitize']);
   
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
@@ -36,7 +36,8 @@ app.controller('myCtrl', function($scope) {
     var bayith = stanza[$scope.displayOption.bayith(obj)];
 	var number = bayith.acrostic || 0;
 	const fields = {hebrew:'content',english:'englishContent'}
-    var text = bayith[fields[$scope.displayOption.language(obj)]];
+    var text = bayith[fields[$scope.displayOption.language(obj)]]
+		.replace(/__(.*?)__/, '<span class="childName">$1</span>');
 	if(number == 0){
       return other ? text: '';
     }

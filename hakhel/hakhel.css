@@ -77,6 +77,10 @@ div.tableContainer {
 	font-size:1.2em
 }
 
+.childName {
+	font-weight: bold;
+}
+
 .justify {
 	text-align-last: justify
 }
