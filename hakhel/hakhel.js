@@ -61,12 +61,12 @@ app.controller('myCtrl', function($scope) {
 		.then(it => it.text())
 		.then(it => {
 			$scope.intro = it.split(/\n\n/)
-				.splice(0, 3)
+				.splice(0, 4)
 				.map(l => l.replace(/\[.*?\]/g, ''))
 				.map(l => l.replace(/# /g, ''))
 
 			const allText = it.split(/\n/)
-			    .splice(6)
+			    .splice(8)
 				.join('\n')
 				.split('\n\n')
 			$scope.end = allText.splice(44)[0].replace(/\[.*?\]/g, '')
