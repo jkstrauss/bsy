@@ -11,10 +11,10 @@
 **יַ**צֵּב[^1.3.1] גְּבוּל[^1.3.1-2] הַר הַמּוֹר[^1.3.3-4]\
 יִסַּח[^1.4.1] כָּל בֵּית גֵּאֶה[^1.4]
 
-For your statutes, I am in suspense\
+I Await your statutes with suspense\
 O when will I arrive and gaze\
-Erected 'round Moriah a fence\
-The house of the haughty He'll raze
+Erected around Moriah a fence\
+The house of all haughty He'll raze
 
 **בְּ**בֹא כָל יִשְׂרָאֵל[^2.1]\
 לֵרָאוֹת אֶת פְּנֵי אֲדוֹנָיו[^2.2]\
@@ -52,9 +52,9 @@ As if it was done to the letter
 בְּעֶזְרַת נָשִׁים[^5.4.1-2] לְמַֽטָּה[^5.4.3]
 
 Assemble when the first day ends\
-At Sukkoth after the sabbattical year\
+At Sukkoth after the sabbatical year\
 The reading of the best of dividends\
-In the women's forecourt - to hear
+In the women's forecourt do hear
 
 **וְ**כֹל פָּטוּר מֵרְאִיָּה[^6.1]\
 אֵינֶֽנּוּ שׁוֹמֵֽעַ קְרִיאָה[^6.2.3]\
@@ -71,9 +71,9 @@ And children - from impurity clear
 **וּ**בְטֶֽרֶם יִקְרַב[^7.3.1-2] לְהַמְנִֽיעַ[^7.3.3]\
 לְבַל[^7.4.1] יִהְיוּ דְחוּקִים[^7.4]
 
-Finally, when the time arrives\
+When the time finally arrives\
 A wooden platform - they assemble\
-But not before the time arrives\
+Not before or when the Lulav waves\
 Circulation in the forecourt to enable
 
 **חַ**זַּן[^8.1.1] עִסְקֵי כְנֶֽסֶת[^8.1]\
@@ -91,39 +91,38 @@ To elevate the king's lofty role
 **יְ**לוּד __יוֹכֶֽבֶד__[^9.3.1-2] כְּתָבָֽנִי[^9.3]\
 לְנֶֽכֶד[^9.4.1] שָׂחַק בִּבְרוֹשׁ[^9.4.2-3][^9.4]
 
-Then Aaron's assistant bears it\
+The assistant to Aaron then bears it\
 And the anointed priest does deliver\
-Yocheved's son scribed a sacred writ\
-To the seed of David, cypress waver
+Scion of Yocheved's sacred writ\
+To the seed of David - cypress waver
 
 **יְ**קַבֵּל תּוֹרָה עוֹמֵד[^10.1]\
 בְּחִירָה לֵישֵׁב מִמֶּֽנּוּ[^10.2]\
 **מְ**בָרֵךְ הֲכָנָה לְלַמֵּד[^10.3.3]\
 אֲשֶׁר בָּֽחַר בָּֽנוּ[^10.4]
 
-Receiving the Torah while standing\
-Reading while sitting - his option\
-Blessing to prepare for teaching\
+Receiving the Torah is done standing\
+Reading sitting - that's his option\
+He recites, preparing for teaching\
 "He Who chose us as His nation"
-
 
 **כֵּֽ**פֶל תּוֹרָה[^11.1.1-2] מַתְחִיל[^11.1]\
 עַד סוֹף קְרִיאַת שְׁמַע[^11.2]\
 **וְ**אֵת הָאֲדָמָה יַנְחִיל[^11.3]\
 אִם שָׁמֺֽעַ תִּשְׁמַע[^11.4]
 
-He opens with Deutoronomy\
+He commences Deutoronomy\
 Until the Shema's conclusion\
 Then, "In the land autonomy\
-If, to His command is your attention"
+If to His command is your attention"
 
 **לְ**צָרֵף עֶרְכֵי[^12.1.2] מַעֲשֵׂר\
 בִּרְאֵה וּבְכִי תָבוֹא[^12.2]\
 **ס**וּסִים רַק חָסֵר[^12.3.3][^12.3]\
 אַף שֶׁבַּתָּֽוֶךְ[^12.4.2] מִכְתָּבוֹ[^12.4.3]
 
-To adjoin the tithe chapters\
-In Re'eh and Ki Thavoh\
+Adjoining the tithe chapters\
+of Re'eh and Ki Thavoh\
 "Limit horses and riders"\
 It is written in the middle, though
 
@@ -134,7 +133,7 @@ It is written in the middle, though
 
 The king concludes all the warnings\
 With the "blessings and curses"\
-The blessings and also the readings\
+The blessings like the readings\
 In the Jewish language he expresses
 
 **נָ**טַע בְּתוֹכֵֽנוּ[^14.1.1-2] פּוֹצֶה[^14.1.3][^14.1]\
@@ -154,8 +153,8 @@ The thanksgiving prayer he blesses
 
 The order of the festival blessing\
 Words expressed in concentration\
-O guard the tent of meeting\
-O King, "Dweller of Zion"
+Please keep the tent of meeting\
+O King, Who Dwells in Zion
 
 **עֺ**ז __שְׁלֹמֹה__[^16.1.2] תֵּן לְמַלְכֶּֽךָ[^16.1]\
 אַתָּה הַבּוֹחֵר בְּיִשְׂרָאֵל\
@@ -163,7 +162,7 @@ O King, "Dweller of Zion"
 מְקַדֵּשׁ הַכֹּהֲנִים[^16.4.1-2] הוֹאֵל[^16.4.3][^16.4]
 
 Solomon's glory give Your regents\
-O Elector of Israel\
+You Elector of Israel\
 The appeasement of your agents\
 O Sanctifier of priests take well
 
@@ -174,7 +173,7 @@ O Sanctifier of priests take well
 
 Opening his mouth with entreaties\
 Until his prayer's conclusion\
-O save your nation from calamities\
+Save your nation from calamities\
 Blessed be The Listener of petition
 
 **צֵ**את שַׁבַּת הָאָֽרֶץ[^18.1]\
@@ -203,9 +202,9 @@ Men, women, children and infants
 בַּגּוֹיִם[^20.4.1] כְּ__אֶסְתֵּר__[^20.4.2] תְּמַגֵּר[^20.4.3]
 
 Gather in like the plumy\
-The native and the proselyte\
+From native to the proselyte\
 Why tolerate the blasphemy\
-By nations like Esther You fight
+Of nations like Esther You fight
 
 **שִׂ**מְחַת עוֹלָם[^21.1.2] כַּתְּרֵם[^21.1.3][^21.1]\
 פְּדוּיֶיךָ בְּרִנָּה יְשׁוּבוּן[^21.2]\
@@ -224,7 +223,7 @@ In old age, they will not slack
 
 Those desiring Your salvation acquire\
 Tell them, "Return; be near"\
-Build Jerusalem, burnt by fire\
+Build the city Jerusalem You desire\
 Spread peace upon her there
 
 בא"י פורס[^23.0.2] סוכת שלום עלינו ועל כל עמו ישראל ועל ירושלים[^23.0]
