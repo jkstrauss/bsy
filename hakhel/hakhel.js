@@ -157,6 +157,7 @@ app.controller('myCtrl', function($scope) {
 		text: true
 	}
   ]
+  $scope.subtle = true
   $scope.displayOption = $scope.displayOptions[0]
   $scope.noteOption = $scope.noteOptions[0]
 });
