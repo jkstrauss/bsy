@@ -77,8 +77,12 @@ div.tableContainer {
 	font-size:1.2em
 }
 
-.childName {
+[data-subtle=false] .childName {
 	font-weight: bold;
+}
+
+[data-subtle=true] .coverPage > h1 > p:nth-child(4) {
+	display: none;
 }
 
 .justify {
@@ -94,12 +98,6 @@ div.tableContainer {
 	position:relative;
 	left:0em;
 }
-
-.title-page { 
-    height: 100%;
-	background-color: red;
-	vertical-align: center;
-  }
 
 @media print {
   .coverPage {
@@ -119,4 +117,14 @@ div.tableContainer {
   div.actual {
 	  margin :0in;
   }
+
+  [data-subtle=true] .childName {
+	color: #aaa;
+  }
+}
+
+@media screen {
+	[data-subtle=true] .childName {
+		color: #555;
+	}
 }
