@@ -157,7 +157,7 @@ app.controller('myCtrl', function($scope) {
 		text: true
 	}
   ]
-  $scope.subtle = true
+  $scope.subtle = new URL(window.location.href).searchParams.get('subtle') != 'false'
   $scope.displayOption = $scope.displayOptions[0]
   $scope.noteOption = $scope.noteOptions[0]
 });

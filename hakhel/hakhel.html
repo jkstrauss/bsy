@@ -17,10 +17,6 @@
 					<div>
 						<select ng-model="noteOption" ng-options="o.display for o in noteOptions" ></select>
 					</div>
-					<div>
-						<input type="checkbox" id="subtle" ng-model="subtle">
-						<label for="subtle">Subtle Names</label><br>
-					</div>
 				</div>
 				<div ng-show="noteOption.text" data-subtle="{{subtle}}">
 					<div class="coverPageWrapper">

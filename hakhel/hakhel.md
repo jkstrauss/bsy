@@ -31,7 +31,7 @@ He will show His face with favor
 **סֵֽ**תֶר הֱוֵה לָֽנוּ[^3.3]\
 כַּלֵּה שֹׁד וָמֵץ[^3.4]
 
-For our breach, construct a wall\
+For our breach construct a wall\
 To the week-kneed O give might\
 A shelter You will be for us all\
 Finish off plunderer and parasite
@@ -74,7 +74,7 @@ And children - from impurity clear
 When the time finally arrives\
 A wooden platform - they assemble\
 Not before or when the Lulav waves\
-Circulation in the forecourt to enable
+Forecourt circulation thus enable
 
 **חַ**זַּן[^8.1.1] עִסְקֵי כְנֶֽסֶת[^8.1]\
 נוֹטֵל סֵֽפֶר עֲזָרָה[^8.2.2-3]\
@@ -122,9 +122,9 @@ If to His command is your attention"
 אַף שֶׁבַּתָּֽוֶךְ[^12.4.2] מִכְתָּבוֹ[^12.4.3]
 
 Adjoining the tithe chapters\
-of Re'eh and Ki Thavoh\
-"Limit horses and riders"\
-It is written in the middle, though
+Twenty-six with fourteen\
+"Limit horses from foreign borders"\
+Though it is written in between
 
 **מֶֽ**לֶךְ גּוֹמֵר לִקְרוֹת[^13.1]\
 בְּעִנְיַן בְּרָכוֹת וּקְלָלוֹת[^13.2]\
@@ -141,7 +141,7 @@ In the Jewish language he expresses
 **יִ**שְׂרָאֵל עַמְּךָ תִּרְצֶה[^14.3]\
 וּלְךָ נָאֶה לְהוֹדוֹת[^14.4]
 
-Nota B'thochenu, he does recite\
+"Nota B'thochenu" he does recite\
 Then prays regarding the services\
 With your people Israel find delight\
 The thanksgiving prayer he blesses
@@ -290,7 +290,7 @@ Spread peace upon her there
 [^11.3]: שכר עשית המצות כעין דברים י"א כ"א למען ירבו ימיכם וגו' על האדמה וגו'
 [^11.4]: כעין דברים י"א י"ג והיה אם שמע תשמעו ולעניננו מרמז שקרא המלך כל פרשת והיה אם שמוע והיינו דברים י"א י"ג-כ"א
 [^12.1.2]: פרשיות כמו ובצדק הגה ערך כי תשא בפיוטי מוסף של פרשת שקלים לר' אלעזר הקליר
-[^12.2]: לפרש"י על המשנה בסוטה שם קרא פרשת מעשר בפרשת ראה (דברים ט"ז כ"ב-כ"ט) סמוך לפרשת מעשר בכי תבא (כ"ו י"ב-ט"ז) אע"פ שקורא אשימה עלי מלך (י"ז י"ד-כ') שמקומו ביניהם אחר כן
+[^12.2]: לפרש"י על המשנה בסוטה שם קרא פרשת מעשר בפרשת ראה (דברים י"ד כ"ב-כ"ט) סמוך לפרשת מעשר בכי תבא (כ"ו י"ב-ט"ז) אע"פ שקורא אשימה עלי מלך (י"ז י"ד-כ') שמקומו ביניהם אחר כן
 [^12.3.3]: ממעט כמו קהלת ואיננו חָסֵר לנפשו מכל אשר יתאוה קהלת ו' ב'
 [^12.3]: רמז לפרשת אשימה עלי מלך שקורא לאחר פרשיות מעשר ושם כתוב רק לא ירבה לו סוסים וגו' דברים י"ז ט"ז
 [^12.4.2]: באמצע כמו והעיר בתוך במדבר ל"ה ה'
