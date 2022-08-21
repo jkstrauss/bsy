@@ -31,7 +31,7 @@ He will show His face with favor
 **סֵֽ**תֶר הֱוֵה לָֽנוּ[^3.3]\
 כַּלֵּה שֹׁד וָמֵץ[^3.4]
 
-For our breach, construct a wall\
+For our breach construct a wall\
 To the week-kneed O give might\
 A shelter You will be for us all\
 Finish off plunderer and parasite
@@ -74,7 +74,7 @@ And children - from impurity clear
 When the time finally arrives\
 A wooden platform - they assemble\
 Not before or when the Lulav waves\
-Circulation in the forecourt to enable
+Forecourt circulation thus enable
 
 **חַ**זַּן[^8.1.1] עִסְקֵי כְנֶֽסֶת[^8.1]\
 נוֹטֵל סֵֽפֶר עֲזָרָה[^8.2.2-3]\
@@ -122,9 +122,9 @@ If to His command is your attention"
 אַף שֶׁבַּתָּֽוֶךְ[^12.4.2] מִכְתָּבוֹ[^12.4.3]
 
 Adjoining the tithe chapters\
-of Re'eh and Ki Thavoh\
-"Limit horses and riders"\
-It is written in the middle, though
+Twenty-six with fourteen\
+"Limit horses from foreign borders"\
+Though it is written in between
 
 **מֶֽ**לֶךְ גּוֹמֵר לִקְרוֹת[^13.1]\
 בְּעִנְיַן בְּרָכוֹת וּקְלָלוֹת[^13.2]\
@@ -141,7 +141,7 @@ In the Jewish language he expresses
 **יִ**שְׂרָאֵל עַמְּךָ תִּרְצֶה[^14.3]\
 וּלְךָ נָאֶה לְהוֹדוֹת[^14.4]
 
-Nota B'thochenu, he does recite\
+"Nota B'thochenu" he does recite\
 Then prays regarding the services\
 With your people Israel find delight\
 The thanksgiving prayer he blesses
