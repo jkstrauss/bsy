@@ -32,7 +32,7 @@ He will show His face with favor
 כַּלֵּה שֹׁד וָמֵץ[^3.4]
 
 For our breach construct a wall\
-To the week-kneed O give might\
+To the weak-kneed O give might\
 A shelter You will be for us all\
 Finish off plunderer and parasite
 
