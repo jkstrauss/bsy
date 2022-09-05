@@ -56,10 +56,10 @@ At Sukkoth after the sabbatical year\
 The reading of the best of dividends\
 In the women's forecourt do hear
 
-**וְ**כֹל פָּטוּר מֵרְאִיָּה[^6.1]\
+**וּ**פָטוּר מִן רְאִיָּה[^6.1]\
 אֵינֶֽנּוּ שׁוֹמֵֽעַ קְרִיאָה[^6.2.3]\
 **לְ**בַד מֵאִשָּׁה רְאוּיָה[^6.3.3]\
-וְכָל טַף בְּלִי טוּמְאָה[^6.4]
+וְכָל טַף בְּלִי טֻמְאָה[^6.4]
 
 All absolved from appearing\
 Need not assemble over there\
