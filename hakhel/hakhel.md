@@ -166,12 +166,12 @@ You Elector of Israel\
 The appeasement of your agents\
 O Sanctifier of priests take well
 
-**פּ**וֹתֵֽחַ פִּיו בְּשַׁוְעָה[^17.1]\
+**פּ**וֹתֵֽחַ שְׂפָתָיו[^17.1.1-2] בְּשַׁוְעָה[^17.1]\
 עַד תְּחִנָּתוֹ כִּלָּה\
 **אֶ**ת עַמְּךָ הוֹשִֽׁיעָה[^17.3]\
 בָּרוּךְ שׁוֹמֵֽעַ תְּפִלָּה[^17.4]
 
-Opening his mouth with entreaties\
+Opening his lips with entreaties\
 Until his prayer's conclusion\
 Save your nation from calamities\
 Blessed be The Listener of petition
@@ -331,6 +331,7 @@ Spread peace upon her there
 [^16.4.1-2]: רמז לחתימת הברכה מקדש הכהנים רמב"ם שם
 [^16.4.3]: לשון רצון כמו הואל וברך את בית עבדך שמואל ב' ז' כ"ט
 [^16.4]: אתה מקדש הכהנים תמצא חן בעבודתם
+[^17.1.1-2]: כעין תהלים נ"א י"ז שפתי תפתח
 [^17.1]: לשון הרמב"ם מתחנן ומתפלל בה כפי מה שהוא יכול
 [^17.3]: כעין רמב"ם שם הושע ה' את עמך ישראל שעמך צריכין להושע
 [^17.4]: זהו החתימה
