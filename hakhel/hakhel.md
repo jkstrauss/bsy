@@ -51,8 +51,8 @@ As if it was done to the letter
 **קְ**הִלָּה בָּהָר הַטּוֹב[^5.3.2-3]\
 בְּעֶזְרַת נָשִׁים[^5.4.1-2] לְמַֽטָּה[^5.4.3]
 
-After the holiday the trumpets treble\
-Sukkoth after a year one may not till\
+After the holiday trumpets treble\
+The year that the land is still\
 On Jerusalem's mountain assemble\
 To the women's court down the hill
 
