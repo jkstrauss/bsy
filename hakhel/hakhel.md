@@ -29,7 +29,7 @@ He will show His face with favor
 **גְּ**דוֹר אֶת פִּרְצוֹתֵֽנוּ[^3.1]\
 בִּרְכַּֽיִם כֹּשְׁלוֹת אַמֵּץ[^3.2]\
 **סֵֽ**תֶר הֱוֵה לָֽנוּ[^3.3]\
-כַּלֵּה שֹׁד וָמֵץ[^3.4]
+אַפֵּס שֹׁד וָמֵץ[^3.4]
 
 For our breach construct a wall\
 To the weak-kneed O give might\
