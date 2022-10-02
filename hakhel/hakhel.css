@@ -12,9 +12,9 @@ div.main {
 }
 
 div.actual {
-	width:7.5in;
-	padding:0in;
-	margin:.5in;
+  width:7.5in;
+  padding:0in;
+  margin:.5in;
 }
 
 div.tableContainer {
@@ -27,33 +27,44 @@ div.tableContainer {
 }
 
 .bayith.hebrew {
-	width:1.5in;
-	font-size:19px;
+	width:1.25in;
+	font-size:15px;
     direction: rtl;
 }
 
 .bayith.english {
-	width:2in;
-	font-size:11px;
+	width:2.1in;
+	font-size:13px;
     direction: ltr;
 }
 
 [data-language-equal-size=true] .bayith.english, [data-language-equal-size=true] .bayith.hebrew {
-	width:1.75in;
+	width:1.775in;
+	height: 30px;
+}
+
+[data-language-equal-size=true][data-display-option=interlinear] .bayith.hebrew {
+	height: 21px;
+}
+
+[data-language-equal-size=true][data-display-option=interlinear] .bayith.english {
+	height: 12px;
+}
+
+[data-language-equal-size=true] .bayith.hebrew {
+	font-size: 22px;
 }
 
 [data-language-equal-size=true] .bayith.english {
 	font-size: 11px;
 	text-align: center;
-	text-align-last: center;
-	vertical-align: top;
-	height: 2em;
-	position: relative;
+	text-align-last: justify;
+	margin-top: 4.5px;
 }
 
-.bayith:not(:last-child) {
-	padding-left: .75ex;
-	padding-right: .75ex;
+.bayith {
+	padding-left: .05in;
+	padding-right: .05in;
 }
 
 .stanza {
@@ -64,6 +75,14 @@ div.tableContainer {
 .acrostic {
 	font-weight:bold;
 	font-size:1.2em
+}
+
+[data-subtle=false] .childName {
+	font-weight: bold;
+}
+
+[data-subtle=true] .coverPage > h1 > p:nth-child(4) {
+	display: none;
 }
 
 .justify {
@@ -77,5 +96,35 @@ div.tableContainer {
 
 [data-offset-acrostic=true] .acrostic{
 	position:relative;
-	left:.25em;
+	left:0em;
+}
+
+@media print {
+  .coverPage {
+	margin-top: 45%;
+    page-break-after: always;
+  }
+  
+  [data-language-equal-size=true]:not([data-display-option=interlinear]) .page {
+	padding-top: 1in;
+  }
+  .page {
+	page-break-after: always;
+  }
+  .hide-print {
+	  display: none;
+  }
+  div.actual {
+	  margin :0in;
+  }
+
+  [data-subtle=true] .childName {
+	color: #aaa;
+  }
+}
+
+@media screen {
+	[data-subtle=true] .childName {
+		color: #555;
+	}
 }

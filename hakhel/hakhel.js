@@ -6,7 +6,7 @@
   
   
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ngSanitize']);
   
 app.controller('myCtrl', function($scope) {
   $scope.log = log;
@@ -15,10 +15,15 @@ app.controller('myCtrl', function($scope) {
   $scope.content = []
 
   $scope.doNote = function(note) {
-	return $scope.content[note[0] - 1][note[1] - 1].content.replace(
+    const contentTarget =
+		note[0] < 1 ? $scope.intro[note[1] - 1] : 
+		note[0] > 22 ? $scope.end :
+		$scope.content[note[0] - 1][note[1] - 1].content
+		
+	return contentTarget.replace(
     /־/g, ' '
   ).replace(
-    /[^ﭏא-ת ]/g, ''
+    /[^ﭏא-ת" ]/g, ''
   ).replace(
     new RegExp (
         '([^ ]+ ){'+(note[2] -1 )+'}(([^ ]+ ){'+(note[3]-1)+'}[^ ]+).*'
@@ -27,11 +32,12 @@ app.controller('myCtrl', function($scope) {
   );
   };
   
-  $scope.letters = function(stanza, line, column, other) {
-    var bayith = stanza[$scope.displayOption.bayith(column, line)];
+  $scope.letters = function(stanza, obj, other) {
+    var bayith = stanza[$scope.displayOption.bayith(obj)];
 	var number = bayith.acrostic || 0;
 	const fields = {hebrew:'content',english:'englishContent'}
-    var text = bayith[fields[$scope.displayOption.language(column, line)]];
+    var text = bayith[fields[$scope.displayOption.language(obj)]]
+		.replace(/__(.*?)__/, '<span class="childName">$1</span>');
 	if(number == 0){
       return other ? text: '';
     }
@@ -43,9 +49,9 @@ app.controller('myCtrl', function($scope) {
     );
   }
 
-  $scope.punctuation = (column, line) => {
-	  const lang = $scope.displayOption.language(column, line)
-	  const last = $scope.displayOption.last(column, line)
+  $scope.punctuation = obj => {
+	  const lang = $scope.displayOption.language(obj)
+	  const last = $scope.displayOption.last(obj.column, obj.line)
 	  return lang == 'english' ?
 	     (last ? '.' : '') :
 		 (last ? ':' : '.')
@@ -55,11 +61,21 @@ app.controller('myCtrl', function($scope) {
 	  fetch('hakhel.md')
 		.then(it => it.text())
 		.then(it => {
-			const hebrewText = it.split(/\r?\n\r?\n/)
+			$scope.intro = it.split(/\n\n/)
+				.splice(0, 4)
+				.map(l => l.replace(/\[.*?\]/g, ''))
+				.map(l => l.replace(/# /g, ''))
+
+			const allText = it.split(/\n/)
+			    .splice(8)
+				.join('\n')
+				.split('\n\n')
+			$scope.end = allText.splice(44)[0].replace(/\[.*?\]/g, '')
+			const hebrewText = allText
 			.filter((l, li) => li % 2 == 0)
 			.splice(0, 22)
 			.map(l => l.replace(/\[.*?\]/g, ''))
-			.map(l => l.split(/\\\r?\n/)
+			.map(l => l.split(/\\\n/)
 				.map(b => { return {
 					acrostic: b
 						.replace(/[^*ﭏא-ת ]/g, '')
@@ -68,10 +84,10 @@ app.controller('myCtrl', function($scope) {
 					content: b
 					.replaceAll('**', '')}}))
 			    var result = [];
-			const englishText = it.split(/\r?\n\r?\n/)
+			const englishText = allText
 			.filter((l, li) => li % 2)
 			.splice(0, 22)
-			.map(l => l.split(/\\\r?\n/))
+			.map(l => l.split(/\\\n/))
 
 			$scope.content = hebrewText
 				.map((stanza, stanzaIndex) =>
@@ -95,24 +111,34 @@ app.controller('myCtrl', function($scope) {
 		offsetAcrostic: true,
 		display: 'Translation in parralel (half stanza)',
 		lines: [0, 1],
-		bayith: (column, line) => (line * 2) + ((column + Math.floor(column / 2)) % 2),
-		language: (column) => column < 2 ? 'hebrew' : 'english',
-		last: (column, line) => line == 1 && [1, 2].includes(column)
+		bayith: obj => (obj.line * 2) + ((obj.column + Math.floor(obj.column / 2)) % 2),
+		language: obj => obj.column < 2 ? 'hebrew' : 'english',
+		last: obj => obj.line == 1 && [1, 2].includes(obj.column)
 	}, {
 		name: 'hebrew',
 		display: 'Hebrew Only',
+		languageEqualSize: true,
 		lines: [0],
-		bayith: (column) => column,
+		bayith: obj => obj.column,
 		language: () => 'hebrew',
-		last: (column) => column == 3
+		last: obj => obj.column == 3
+	}, {
+		name: 'facingPage',
+		display: 'Translation on Facing Page',
+		languageEqualSize: true,
+		pages: [0, 1],
+		lines: [0],
+		bayith: obj => obj.page == 0 ? obj.column : 3 - obj.column,
+		language: obj => obj.page == 0 ? 'hebrew' : 'english',
+		last: obj => obj.column == 3
 	}, {
 		name: 'interlinear',
 		languageEqualSize: true,
 		display: 'Interlinear',
 		lines: [0, 1],
-		bayith: (column, line) => column,
-		language: (column, line) => line == 0 ? 'hebrew' : 'english',
-		last: (column, line) => line == 0 && column == 3
+		bayith: obj => obj.column,
+		language: obj => obj.line == 0 ? 'hebrew' : 'english',
+		last: obj => obj.line == 0 && obj.column == 3
 	}
   ]
   $scope.noteOptions = [
@@ -131,7 +157,7 @@ app.controller('myCtrl', function($scope) {
 		text: true
 	}
   ]
+  $scope.subtle = new URL(window.location.href).searchParams.get('subtle') != 'false'
   $scope.displayOption = $scope.displayOptions[0]
   $scope.noteOption = $scope.noteOptions[0]
-  $scope.printMode = false
 });
