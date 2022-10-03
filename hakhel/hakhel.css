@@ -53,6 +53,7 @@ div.tableContainer {
 
 [data-language-equal-size=true] .bayith.hebrew {
 	font-size: 22px;
+	letter-spacing: -.4px;
 }
 
 [data-language-equal-size=true] .bayith.english {
@@ -121,6 +122,12 @@ div.tableContainer {
   [data-subtle=true] .childName {
 	color: #aaa;
   }
+
+  .notes {
+    letter-spacing: -.23px;
+	word-spacing: -.2px;
+  }
+
 }
 
 @media screen {

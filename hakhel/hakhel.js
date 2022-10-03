@@ -37,7 +37,7 @@ app.controller('myCtrl', function($scope) {
 	var number = bayith.acrostic || 0;
 	const fields = {hebrew:'content',english:'englishContent'}
     var text = bayith[fields[$scope.displayOption.language(obj)]]
-		.replace(/__(.*?)__/, '<span class="childName">$1</span>');
+		.replace(/__(.*?)__/g, '<span class="childName">$1</span>');
 	if(number == 0){
       return other ? text: '';
     }
