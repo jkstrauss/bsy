@@ -111,7 +111,7 @@ He recites, preparing for teaching\
 **וְ**אֵת הָאֲדָמָה יַנְחִיל[^11.3]\
 אִם שָׁמֺֽעַ תִּשְׁמְעוּ[^11.4]
 
-He commences Deutoronomy\
+He commences Deuteronomy\
 Until the doorpost diction\
 Then, "In the land autonomy\
 If to His command is your attention"
@@ -192,7 +192,7 @@ As if by Sinai direct from the Deity
 הָאֲנָשִׁים וְהַנָּשִׁים וְהַטָּף[^19.4]
 
 Be attentive to their supplication\
-Like to incence's sweet scents\
+Like to incense's sweet scents\
 Gather in the entire nation\
 Men, women, children and infants
 
