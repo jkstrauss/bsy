@@ -29,6 +29,7 @@ div.tableContainer {
 .bayith.hebrew {
 	width:1.25in;
 	font-size:15px;
+	letter-spacing: -.02px;
     direction: rtl;
 }
 
