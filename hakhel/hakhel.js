@@ -37,7 +37,7 @@ app.controller('myCtrl', function($scope) {
 	var number = bayith.acrostic || 0;
 	const fields = {hebrew:'content',english:'englishContent'}
     var text = bayith[fields[$scope.displayOption.language(obj)]]
-		.replace(/__(.*?)__/g, '<span class="childName">$1</span>');
+		.replace(/__(.*?)__/g, '<span class="familyName">$1</span>');
 	if(number == 0){
       return other ? text: '';
     }
@@ -62,12 +62,12 @@ app.controller('myCtrl', function($scope) {
 		.then(it => it.text())
 		.then(it => {
 			$scope.intro = it.split(/\n\n/)
-				.splice(0, 4)
+				.splice(0, 3)
 				.map(l => l.replace(/\[.*?\]/g, ''))
 				.map(l => l.replace(/# /g, ''))
 
 			const allText = it.split(/\n/)
-			    .splice(8)
+			    .splice(6)
 				.join('\n')
 				.split('\n\n')
 			$scope.end = allText.splice(44)[0].replace(/\[.*?\]/g, '')
@@ -157,7 +157,6 @@ app.controller('myCtrl', function($scope) {
 		text: true
 	}
   ]
-  $scope.subtle = new URL(window.location.href).searchParams.get('subtle') != 'false'
   $scope.displayOption = $scope.displayOptions[0]
   $scope.noteOption = $scope.noteOptions[0]
 });
