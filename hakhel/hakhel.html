@@ -5,7 +5,7 @@
 	<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
 	<script src= "hakhel.js"></script>
-	
+
 	</head>
 	<body dir="rtl" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
 		<div class="main">
@@ -18,7 +18,7 @@
 						<select ng-model="noteOption" ng-options="o.display for o in noteOptions" ></select>
 					</div>
 				</div>
-				<div ng-show="noteOption.text" data-subtle="{{subtle}}">
+				<div ng-show="noteOption.text">
 					<div class="coverPageWrapper">
 						<div class="coverPage">
 							<h1>
@@ -29,10 +29,10 @@
 					<div class="pages" data-display-option="{{displayOption.name}}" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
 						<div class="page" ng-repeat="page in displayOption.pages || [0]">
 							<div style="tableContainer">
-								<div>								
+								<div>
 									<p ng-repeat="stanza in content" class="stanza">
 										<span ng-repeat="line in displayOption.lines" class="line">
-											<span 
+											<span
 												ng-repeat="column in [0,1,2,3] track by column + '_' + line + '_' + page"
 												ng-init="obj={line:line,column:column,page:page}"
 												class="bayith justify {{displayOption.language(obj)}} {{'line_' + line}} {{'col_' + column}} {{'page_' + page}}"
@@ -58,5 +58,5 @@
 			</div>
 		</div>
 	</body>
-  
+
 </html>

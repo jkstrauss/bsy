@@ -78,12 +78,8 @@ div.tableContainer {
 	font-size:1.2em
 }
 
-[data-subtle=false] .childName {
+.familyName {
 	font-weight: bold;
-}
-
-[data-subtle=true] .coverPage > h1 > p:nth-child(4) {
-	display: none;
 }
 
 .justify {
@@ -119,10 +115,6 @@ div.tableContainer {
 	  margin :0in;
   }
 
-  [data-subtle=true] .childName {
-	color: #aaa;
-  }
-
   .notes {
     letter-spacing: -.4px;
 	word-spacing: -1.5px;
@@ -130,8 +122,3 @@ div.tableContainer {
 
 }
 
-@media screen {
-	[data-subtle=true] .childName {
-		color: #555;
-	}
-}
