@@ -37,7 +37,8 @@ app.controller('myCtrl', function($scope) {
 	var number = bayith.acrostic || 0;
 	const fields = {hebrew:'content',english:'englishContent'}
     var text = bayith[fields[$scope.displayOption.language(obj)]]
-		.replace(/__(.*?)__/g, '<span class="familyName">$1</span>');
+        .replace(/(([\u05d0-\u05ea][\u05b0-\u05c2\u05af]*\u05c4)+)/g, '<span class="familyName">$1</span>')
+        .replace(/\u05c4/g, '');
 	if(number == 0){
       return other ? text: '';
     }
@@ -76,13 +77,15 @@ app.controller('myCtrl', function($scope) {
 			.splice(0, 22)
 			.map(l => l.replace(/\[.*?\]/g, ''))
 			.map(l => l.split(/\\\n/)
-				.map(b => { return {
-					acrostic: b
-						.replace(/[^*ﭏא-ת ]/g, '')
-						.replace(/\*\*(.*)\*\*.*|.*/, '$1')
-						.length,
+				.map((b, bi) => { return {
+					acrostic: (bi % 2) == 0 ?
+						b
+							.replace(/^(([\u05d0-\u05ea][\u05b0-\u05c2]*\u05c4)+).*/, '$1')
+							.replace(/[^\u05c4]/g, '')
+							.length :
+						0,
 					content: b
-					.replaceAll('**', '')}}))
+					.replace(/\u0592/g, '')}}))
 			    var result = [];
 			const englishText = allText
 			.filter((l, li) => li % 2)
