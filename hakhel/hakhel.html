@@ -38,7 +38,7 @@
 												class="bayith justify {{displayOption.language(obj)}} {{'line_' + line}} {{'col_' + column}} {{'page_' + page}}"
 											>
 												<span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(obj) != 'english'" ng-bind-html="letters(stanza, obj, false)"></span><!-- Prevent unwanted spaces
-												--><span ng-bind-html="log(letters(stanza, obj, true)) + punctuation(obj)"></span>
+												--><span ng-bind-html="letters(stanza, obj, true) + punctuation(obj)"></span>
 											</span>
 										</span>
 									</p>
@@ -49,11 +49,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="notes" style="text-align:justify" ng-show="noteOption.notes">
-						<span ng-if="content.length" ng-repeat="note in notes()">
-							<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
-						</span>
-					</div>
+				</div>
+				<div class="notes" style="text-align:justify" ng-show="noteOption.notes">
+					<span ng-if="content.length" ng-repeat="note in notes()">
+						<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
+					</span>
 				</div>
 			</div>
 		</div>
