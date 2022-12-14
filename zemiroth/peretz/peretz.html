@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello Vue!</title>
+    <!-- including Vue with development version CDN -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script src="./peretz.js"></script>
+  </head>
+  <body>
+  <style>
+  h1 {
+	width: 460px;
+  }
+  .bayith {
+	display: inline-block;
+	text-align-last: justify;
+  }
+	.bayith {
+		width: 270px;
+	}
+	.bayith.refrain {
+		width: 460px;
+	}
+  </style>
+	<div id="app" dir="rtl" style="text-align:center; min-width: 7.5in">
+		<div style="margin:0 auto; width: 460px">
+			<h1 v-for="i in intro" v-text="i" ></h1>
+			<p v-for="stanza in text" style="text-align: justify; font-size: 25px">
+				<span v-for="(bayith, bi) in stanza">
+					<span v-html="bayith" :class="{ refrain: bi >=6, bayith: true }"></span>
+					<br/>
+				</span>
+				
+			</p>
+			</div>
+	</div>
+  </body>
+  <script>start()</script>
+</html>
