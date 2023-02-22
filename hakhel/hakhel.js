@@ -12,7 +12,9 @@ app.controller('myCtrl', function($scope) {
   $scope.log = log;
   var endNotes = []
   $scope.notes = (stanza) => stanza != null ? endNotes.filter(n => n[0] == stanza) : endNotes
+  $scope.noteStanzas = () => [...new Set($scope.notes().map(it => it[0]))]
   $scope.content = []
+  $scope.stanzaLetter = (stanza) => 'אבגדהוזחטיכלמנסעפצקרשת'[stanza - 1]
 
   $scope.doNote = function(note) {
     const contentTarget =
@@ -147,13 +149,29 @@ app.controller('myCtrl', function($scope) {
   $scope.noteOptions = [
     {
 		name: 'all',
-		display: 'Show All',
+		display: 'Compact End Notes',
 		text: true,
 		notes: true
 	}, {
+		name: 'all-split',
+		display: 'Split End Notes',
+		text: true,
+		notes: true,
+		split: true
+	}, {
+		name: 'interleaved',
+		display: 'Interleaved',
+		text: true,
+		interleaved: true
+	}, {
 		name: 'notes',
-		display: 'Notes Only',
+		display: 'Compact Notes Only',
 		notes: true
+	}, {
+		name: 'notes',
+		display: 'Split Notes Only',
+		notes: true,
+		split: true
 	}, {
 		name: 'text',
 		display: 'Text Only',
