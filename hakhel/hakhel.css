@@ -38,6 +38,11 @@ div.tableContainer {
     direction: ltr;
 }
 
+.notes {
+	font-size: 16px;
+	text-align: justify
+}
+
 [data-language-equal-size=true] .bayith.english, [data-language-equal-size=true] .bayith.hebrew {
 	width:1.775in;
 	height: 30px;
@@ -100,6 +105,21 @@ div.tableContainer {
 	left:0em;
 }
 
+@media screen {
+	.pages .coverNotes,
+	.coverPageWrapper:not(:hover) .coverNotes,
+	.stanzaWithNotes:not(.stanzaWithNotes:hover) .notes,
+	.conclusionWrapper:not(:hover) .conclusionNotes {
+		display: none;
+	}
+	[data-interleave-notes=true] .coverPageWrapper:hover,
+	[data-interleave-notes=true] .stanzaWithNotes:hover,
+	[data-interleave-notes=true] .conclusionWrapper:hover {
+		background:#ffc;
+		padding-bottom: 10px;
+	}
+}
+
 @media print {
   .coverPage {
 	margin-top: 45%;
@@ -125,5 +145,12 @@ div.tableContainer {
   [data-split-notes]:not([data-split-notes=true]) .notes {
 	  letter-spacing: -.3px;
 	  word-spacing: -1.5px;
+  }
+
+  [data-interleave-notes=true] .notes:not(.conclusionNotes) {
+     padding-bottom: 10px;
+  }
+  [data-interleave-notes=true] .coverPageWrapper .coverNotes {
+      display: none;
   }
 }

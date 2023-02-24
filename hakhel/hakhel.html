@@ -9,7 +9,7 @@
 	</head>
 	<body dir="rtl" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
 		<div class="main">
-			<div class="actual" data-split-notes="{{noteOption.split}}" >
+			<div class="actual" data-split-notes="{{noteOption.split}}" data-interleave-notes="{{noteOption.interleaved}}">
 				<div class="hide-print">
 					<div>
 						<select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
@@ -25,17 +25,21 @@
 								<p ng-repeat="header in intro">{{header}}</p>
 							</h1>
 						</div>
+						<div ng-if="noteOption.interleaved" class="notes coverNotes" >
+							<span ng-if="content.length" ng-repeat="note in notes(0)">
+								<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
+							</span>
+						</div>
 					</div>
 					<div class="pages" data-display-option="{{displayOption.name}}" data-offset-acrostic="{{displayOption.offsetAcrostic}}" data-language-equal-size="{{displayOption.languageEqualSize}}">
 						<div class="page page_{{page}}" ng-repeat="page in displayOption.pages || [0]">
 							<div>
 								<div>
-									<p ng-if="noteOption.interleaved" style="font-size: 15px; text-align: justify" class="inlineNotes">
-										<br/>
+									<div ng-if="noteOption.interleaved" class="notes coverNotes" >
 										<span ng-if="content.length" ng-repeat="note in notes(0)">
 											<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
 										</span>
-									</p>
+									</div>
 									<span ng-repeat="(si, stanza) in content" class="stanzaWithNotes" style="display:inline-block;">
 										<div class="stanza">
 											<span ng-repeat="line in displayOption.lines" class="line">
@@ -49,28 +53,28 @@
 												</span>
 											</span>
 										</div>
-										<div ng-if="noteOption.interleaved" style="font-size: 15px; text-align: justify" class="inlineNotes">
-											<br/>
+										<div ng-if="noteOption.interleaved" class="notes">
 											<span ng-if="content.length" ng-repeat="note in notes(si + 1)">
 												<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
 											</span>
 										</div>
 									</span>
-									<p ng-show="page == 0">
-										{{end}}
-									</p>
-									<div ng-if="noteOption.interleaved" style="font-size: 15px; text-align: justify" class="inlineNotes">
-										<br/>
-										<span ng-if="content.length" ng-repeat="note in notes(23)">
-											<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
-										</span>
+									<div class="conclusionWrapper">
+										<p ng-show="page == 0" class="conclusion">
+											{{end}}
+										</p>
+										<div ng-if="noteOption.interleaved" class="notes conclusionNotes">
+											<span ng-if="content.length" ng-repeat="note in notes(23)">
+												<span style="font-weight:bold">{{doNote(note)}}.</span> {{note[4]}}:
+											</span>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="notes" style="text-align:justify" ng-show="noteOption.notes">
+				<div class="notes" ng-show="noteOption.notes">
 					<span ng-repeat="stanza in noteStanzas()">
 						<div ng-if="noteOption.split" style="font-weight: bold;" ng-if="stanza > 0 && stanza <= 22">{{stanzaLetter(stanza)}}</div>
 						<span ng-if="content.length" ng-repeat="note in notes(stanza)">
