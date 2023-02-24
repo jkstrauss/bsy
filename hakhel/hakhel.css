@@ -1,14 +1,14 @@
 body {
-	background:#ffd;
+   background:#ffd;
 }
 
-p  {
+p {
   font-size:23.5px;
 }
 
 div.main {
-	text-align:center;
-	background:#ffd;
+   text-align:center;
+   background:#ffd;
 }
 
 div.actual {
@@ -18,133 +18,133 @@ div.actual {
 }
 
 div.tableContainer {
-	width:100%;
+   width:100%;
 }
 
 .bayith {
-	display:inline-block;
-	padding-bottom:0px;
+   display:inline-block;
+   padding-bottom:0px;
 }
 
 .bayith.hebrew {
-	width:1.25in;
-	font-size:15px;
+   width:1.25in;
+   font-size:15px;
     direction: rtl;
 }
 
 .bayith.english {
-	width:2.1in;
-	font-size:13px;
+   width:2.1in;
+   font-size:13px;
     direction: ltr;
 }
 
 .notes {
-	font-size: 16px;
-	text-align: justify
+   font-size: 16px;
+   text-align: justify
 }
 
 [data-language-equal-size=true] .bayith.english, [data-language-equal-size=true] .bayith.hebrew {
-	width:1.775in;
-	height: 30px;
+   width:1.775in;
+   height: 30px;
 }
 
 [data-language-equal-size=true][data-display-option=interlinear] .bayith.hebrew {
-	height: 21px;
+   height: 21px;
 }
 
 [data-language-equal-size=true][data-display-option=interlinear] .bayith.english {
-	height: 12px;
+   height: 12px;
 }
 
 [data-language-equal-size=true] .bayith.hebrew {
-	font-size: 22px;
-	letter-spacing: -.4px;
+   font-size: 22px;
+   letter-spacing: -.4px;
 }
 
 [data-language-equal-size=true] .bayith.english {
-	font-size: 11px;
-	text-align: center;
-	text-align-last: justify;
-	margin-top: 4.5px;
+   font-size: 11px;
+   text-align: center;
+   text-align-last: justify;
+   margin-top: 4.5px;
 }
 
 .bayith {
-	padding-left: .05in;
-	padding-right: .05in;
+   padding-left: .05in;
+   padding-right: .05in;
 }
 
 .stanza {
-	display: inline-block;
-	margin: 0px;
+   display: inline-block;
+   margin: 0px;
 }
 
 .acrostic {
-	font-weight:bold;
-	font-size:1.2em
+   font-weight:bold;
+   font-size:1.2em
 }
 
 .familyName {
-	font-weight: bold;
+   font-weight: bold;
 }
 
 .justify {
-	text-align-last: justify
+   text-align-last: justify
 }
 
 .page_1 .inlineNotes {
-	visibility: hidden;
+   visibility: hidden;
 }
 
 [data-offset-acrostic=true] .line_0.col_0.hebrew  .acrostic{
-	position:relative;
-	left:.75em;
+   position:relative;
+   left:.75em;
 }
 
 [data-offset-acrostic=true] .acrostic{
-	position:relative;
-	left:0em;
+   position:relative;
+   left:0em;
 }
 
 @media screen {
-	.pages .coverNotes,
-	.coverPageWrapper:not(:hover) .coverNotes,
-	.stanzaWithNotes:not(.stanzaWithNotes:hover) .notes,
-	.conclusionWrapper:not(:hover) .conclusionNotes {
-		display: none;
-	}
-	[data-interleave-notes=true] .coverPageWrapper:hover,
-	[data-interleave-notes=true] .stanzaWithNotes:hover,
-	[data-interleave-notes=true] .conclusionWrapper:hover {
-		background:#ffc;
-		padding-bottom: 10px;
-	}
+   .pages .coverNotes,
+   .coverPageWrapper:not(:hover) .coverNotes,
+   .stanzaWithNotes:not(.stanzaWithNotes:hover) .notes,
+   .conclusionWrapper:not(:hover) .conclusionNotes {
+      display: none;
+   }
+   [data-interleave-notes=true] .coverPageWrapper:hover,
+   [data-interleave-notes=true] .stanzaWithNotes:hover,
+   [data-interleave-notes=true] .conclusionWrapper:hover {
+      background:#ffc;
+      padding-bottom: 10px;
+   }
 }
 
 @media print {
   .coverPage {
-	margin-top: 45%;
+    margin-top: 45%;
     page-break-after: always;
   }
 
   [data-language-equal-size=true]:not([data-display-option=interlinear]) .page {
-	padding-top: 1in;
+   padding-top: 1in;
   }
   .page {
-	page-break-after: always;
+   page-break-after: always;
   }
   .hide-print {
-	  display: none;
+     display: none;
   }
   div.actual {
-	  margin :0in;
+     margin :0in;
   }
   .stanzaWithNotes {
        break-inside: avoid;
   }
 
   [data-split-notes]:not([data-split-notes=true]) .notes {
-	  letter-spacing: -.3px;
-	  word-spacing: -1.5px;
+     letter-spacing: -.3px;
+     word-spacing: -1.5px;
   }
 
   [data-interleave-notes=true] .notes:not(.conclusionNotes) {
