@@ -91,8 +91,9 @@ div.tableContainer {
    text-align-last: justify
 }
 
-.page_1 .inlineNotes {
+.page_1 .notes {
    visibility: hidden;
+   background: purple;
 }
 
 [data-offset-acrostic=true] .line_0.col_0.hebrew  .acrostic{
@@ -109,12 +110,13 @@ div.tableContainer {
    .pages .coverNotes,
    .coverPageWrapper:not(:hover) .coverNotes,
    .stanzaWithNotes:not(.stanzaWithNotes:hover) .notes,
-   .conclusionWrapper:not(:hover) .conclusionNotes {
+   .conclusionWrapper:not(:hover) .conclusionNotes,
+   .page_1 .notes {
       display: none;
    }
    [data-interleave-notes=true] .coverPageWrapper:hover,
-   [data-interleave-notes=true] .stanzaWithNotes:hover,
-   [data-interleave-notes=true] .conclusionWrapper:hover {
+   [data-interleave-notes=true] .page_0 .stanzaWithNotes:hover,
+   [data-interleave-notes=true] .page_0 .conclusionWrapper:hover {
       background:#ffc;
       padding-bottom: 10px;
    }
