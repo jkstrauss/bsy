@@ -9,7 +9,7 @@
    </head>
    <body dir="rtl" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
       <div class="main">
-         <div class="actual" data-split-notes="{{noteOption.split}}" data-interleave-notes="{{noteOption.interleaved}}" data-compact-notes="{{noteOption.compact}}">
+         <div class="actual" data-split-notes="{{noteOption.split}}" data-interleave-notes="{{noteOption.interleaved}}" data-hoverable-notes="{{noteOption.hoverable}}" data-compact-notes="{{noteOption.compact}}">
             <div class="hide-print">
                <div>
                   <select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>

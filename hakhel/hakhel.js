@@ -164,6 +164,12 @@ app.controller('myCtrl', function($scope) {
       text: true,
       interleaved: true
    }, {
+      name: 'hoverable',
+      display: 'Hoverable',
+      text: true,
+      interleaved: true,
+      hoverable: true
+   }, {
       name: 'notes',
       display: 'Compact Notes Only',
       notes: true

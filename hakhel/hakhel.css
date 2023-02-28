@@ -108,17 +108,20 @@ div.tableContainer {
 
 @media screen {
    .pages .coverNotes,
-   .coverPageWrapper:not(:hover) .coverNotes,
-   .stanzaWithNotes:not(.stanzaWithNotes:hover) .notes,
-   .conclusionWrapper:not(:hover) .conclusionNotes,
-   .page_1 .notes {
+   [data-hoverable-notes=true] .coverPageWrapper:not(:hover) .coverNotes,
+   [data-hoverable-notes=true] .stanzaWithNotes:not(.stanzaWithNotes:hover) .notes,
+   [data-hoverable-notes=true] .conclusionWrapper:not(:hover) .conclusionNotes,
+   [data-hoverable-notes=true] .page_1 .notes {
       display: none;
    }
-   [data-interleave-notes=true] .coverPageWrapper:hover,
-   [data-interleave-notes=true] .page_0 .stanzaWithNotes:hover,
-   [data-interleave-notes=true] .page_0 .conclusionWrapper:hover {
+   [data-hoverable-notes=true] .coverPageWrapper:hover,
+   [data-hoverable-notes=true] .page_0 .stanzaWithNotes:hover,
+   [data-hoverable-notes=true] .page_0 .conclusionWrapper:hover {
       background:#ffc;
       padding-bottom: 10px;
+   }
+   [data-interleave-notes=true]:not([data-hoverable-notes=true]) .notes:not(.conclusionNotes) {
+     padding-bottom: 10px;
    }
 }
 
