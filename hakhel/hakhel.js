@@ -177,7 +177,10 @@ app.controller('myCtrl', function($scope) {
       display: 'Text Only',
       text: true
    }
-  ]
+  ].map(e => {
+    e.compact = !(e.split || e.interleaved)
+    return e
+  })
   $scope.displayOption = $scope.displayOptions[0]
   $scope.noteOption = $scope.noteOptions[0]
 });
