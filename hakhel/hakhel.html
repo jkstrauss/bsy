@@ -10,13 +10,19 @@
    <body dir="rtl" ng-app="myApp" ng-controller="myCtrl" data-ng-init="init()">
       <div class="main">
          <div class="actual" data-split-notes="{{noteOption.split}}" data-interleave-notes="{{noteOption.interleaved}}" data-hoverable-notes="{{noteOption.hoverable}}" data-compact-notes="{{noteOption.compact}}">
-            <div class="hide-print">
+            <div dir="ltr" class="option-selectors">
                <div>
-                  <select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
+			      <label>Layout Options:
+					<select ng-model="displayOption" ng-options="o.display for o in displayOptions" ></select>
+				  </label>
                </div>
-               <div>
+               
+			   <div>
+			   <label>Note Options:
                   <select ng-model="noteOption" ng-options="o.display for o in noteOptions" ></select>
+				  </label>
                </div>
+			   
             </div>
             <div ng-show="noteOption.text">
                <div class="coverPageWrapper">

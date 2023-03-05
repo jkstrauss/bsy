@@ -123,6 +123,10 @@ div.tableContainer {
    [data-interleave-notes=true]:not([data-hoverable-notes=true]) .notes:not(.conclusionNotes) {
      padding-bottom: 10px;
    }
+   
+   .option-selectors {
+	   
+   }
 }
 
 @media print {
@@ -137,7 +141,7 @@ div.tableContainer {
   .page {
    page-break-after: always;
   }
-  .hide-print {
+  .option-selectors {
      display: none;
   }
   div.actual {
