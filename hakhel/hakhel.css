@@ -64,13 +64,13 @@ div.tableContainer {
 [data-language-equal-size=true] .bayith.english {
    font-size: 11px;
    text-align: center;
-   text-align-last: justify;
    margin-top: 4.5px;
 }
 
 .bayith {
    padding-left: .05in;
    padding-right: .05in;
+   text-align-last: start;
 }
 
 .stanza {
@@ -85,10 +85,6 @@ div.tableContainer {
 
 .familyName {
    font-weight: bold;
-}
-
-.justify {
-   text-align-last: justify
 }
 
 .page_1 .notes {
