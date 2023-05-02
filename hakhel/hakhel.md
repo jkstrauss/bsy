@@ -10,7 +10,7 @@
 דְּׄבִיר[^1.4.1] לָכֵן יִתְגָּאֶה[^1.4.2-3][^1.4]
 
 I Await your statutes with suspense\
-I will witness having arrived\
+When will I witness having arrived?\
 Erected around Moriah a fence\
 The Sanctuary thus glorified
 

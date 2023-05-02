@@ -52,7 +52,7 @@
                                     <span
                                        ng-repeat="column in [0,1,2,3] track by column + '_' + line + '_' + page"
                                        ng-init="obj={line:line,column:column,page:page}"
-                                       class="bayith justify {{displayOption.language(obj)}} {{'line_' + line}} {{'col_' + column}} {{'page_' + page}}"
+                                       class="bayith {{displayOption.language(obj)}} {{'line_' + line}} {{'col_' + column}} {{'page_' + page}}"
                                     >
                                        <span class="acrostic" ng-show="stanza[column].acrostic && displayOption.language(obj) != 'english'" ng-bind-html="letters(stanza, obj, false)"></span><!-- Prevent unwanted spaces
                                        --><span ng-bind-html="letters(stanza, obj, true) + punctuation(obj)"></span>
