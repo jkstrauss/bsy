@@ -1,0 +1,22 @@
+  body {
+    font-family: "Times New Roman", Times, Serif
+  }
+  h1, h2 {
+    text-align: center;
+  }
+  body h3 + h3 {
+    margin-top: 0em;
+  }
+  body h3, body h4 {
+    margin-bottom: 0em;
+  }
+  body h3 strong {
+    text-decoration: underline;
+  }
+  body p {
+    text-align: justify;
+  }
+  body {
+   direction: rtl;
+   max-width: 7.5in;
+  }
